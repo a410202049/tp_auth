@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>汽车之家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="汽车之家网站">
+    <meta name="keywords" content="汽车，二手车，房车">
+    <link href="__PUBLIC__/home/css/public.css" rel="stylesheet">
+    <link href="__PUBLIC__/home/css/rotaion.css" rel="stylesheet">
+    <link href="__PUBLIC__/home/css/dropdownlist.css" rel="stylesheet">
+    <link href="__PUBLIC__/home/css/slider.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="__PUBLIC__/home/js/html5shiv.min.js"></script>
+      <script src="__PUBLIC__/home/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+<div class="fix-top">
+  <div class="container">
+    <ul class="fix-top-ul">
+            <li><a class="active" href="#">i黑马网</a></li>  
+            <li><a href="#">活动</a></li>
+            <li><a target="_blank" href="#">黑马会</a></li>
+            <li><a target="_blank" href="#">创业黑马学院</a></li>
+            <li><a target="_blank" href="#">黑马大赛</a></li>
+            <li><a target="_blank" href="#">i代言</a></li>
+        </ul>
+
+        <ul class="fix-top-right">
+            <li><a href="#">加入收藏</a></li>  
+            <li><a href="#">设置首页</a></li>
+        </ul>
+  </div>
+</div>
+<header class="header-top">
+  <div class="container">
+    <div class="header-logo">
+        <a class="logo" href="index.html"><img title="汽车之家" alt="汽车之家" src="__PUBLIC__/home/images/logo.png"></a>
+        <div class="header-right-div">
+            <!-- pc端头部 -->
+            <ul class="navbar-nav">
+                <volist name="menus" id="menu">
+                  <li><a href="{$menu.url}">{$menu.name}</a></li>
+                </volist>
+            </ul>
+
+          <form method="GET" action="http://app.iheima.com/" id="head_search" class="search">
+                <input type="text" placeholder="输入搜索关键字" value=""  name="wd">
+                <button type="submit" class="search-icon"></button>
+          </form>
+          <ul class="navbar-right">
+              <li><a href="/user/login">登录</a></li>
+              <li><a href="/user/register">注册</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+    <block name="content"></block>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="container copy-right">
+		<div class="footer-tag-list">
+		    <a class="transition" target="_blank" href="http://www.huxiu.com/about.html">关于我们</a>
+		    <a class="transition" target="_blank" href="http://www.huxiu.com/joinus.html">加入我们</a>
+		    <a class="transition" target="_blank" href="http://www.huxiu.com/links">合作伙伴</a>
+		    <a class="transition" target="_blank" href="http://www.huxiu.com/contact.html">广告及服务</a>
+		    <a class="transition" target="_blank" href="http://www.huxiu.com/help">常见问题解答</a>
+		    <a class="transition" target="_blank" href="http://www.huxiu.com/tags/10340.html">防网络诈骗专题</a>
+		    <a class="transition js-show-feedback-box min-feedback" target="_blank" href="javascript:" style="display: none;">用户反馈</a>
+		</div>
+		<span>Copyright &copy; <a href="http://www.huxiu.com">汽车之家</a> - 成都汽车之家信息科技股份有限公司 <a target="_blank" href="http://www.miitbeian.gov.cn/">京ICP备12013432号-1</a>
+		    <i class="footer-bull">•</i><em class="bull-right">本站由</em><i style="width: 70px;background-size: 100%;left: 7px;" class="icon-aliyun"></i><em class="bull-em">提供计算与安全服务</em>
+		</span>
+		</div>
+	</div>
+</footer>
+
+<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+<script src="__PUBLIC__/home/js/jquery.rotaion.js"></script>
+<script src="__PUBLIC__/home/js/dropdownlist.js"></script>
+<script src="__PUBLIC__/home/js/responsiveslides.min.js"></script>
+<script type="text/javascript">
+  $(".rotaion").rotaion({auto:true,width:670,height:450,btn:true});
+    // 通过原生select控件创建自定义下拉框
+    var ddl_picture = DropDownList.create({
+        select:$('#brand'),
+        attrs:{
+            column :10,
+            width :143,
+      
+        }
+    });
+    var ddl_picture = DropDownList.create({
+        select:$('#series'),
+        attrs:{
+            column :10,
+            width :143,
+      
+        }
+    });
+
+
+
+  // ddl_picture.change(function(){
+  //   alert(ddl_picture.val());
+  // });
+
+  // json
+  // var ddl_album = DropDownList.create({
+  //     container :$('#demo1'),
+  //     attrs : {
+  //         id : 'ddl_album',   // 给dropdownlist一个id
+  //         column :5,         // 展示4行
+  //         width:200,         // 宽度为150px
+  //         height: 30          // 每个option选项的高度
+  //     },  
+  //     options : [
+  //         ['默认相册','001'],
+  //         ['我的收藏','002'],
+  //         ['大学同学','003',true],
+  //         ['亲朋好友','004'],
+  //         ['明星们','005'],
+  //         ['狗仔队','006'],
+  //     ]
+  
+  // });
+</script>
+<script type="text/javascript">
+  $(function () {
+    $("#slider").responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 500,
+    // 对应外层div的class : slide_container
+    namespace: "slide"
+    });
+});
+</script>
+
+</body>
+</html>

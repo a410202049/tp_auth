@@ -1,0 +1,68 @@
+<extend name="Common/common"/>
+<block name="css">
+    <style type="text/css">
+        .padding-right{
+            margin-right: 15px;
+        }
+    </style>
+</block>
+<block name="container">
+    <div class="row">
+       <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>用户列表</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <a class="btn btn-primary" href="{:U('Admin/Auth/addGroup')}" target="rightMain"><i class="fa fa-plus"></i>&nbsp;&nbsp;添加角色组</a>
+                    <div class="table-box" >
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>用户组名称</th>
+                                    <th>创建时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <volist name="groups" id="group">
+                                    <tr>
+                                        <td>{$group['id']}</td>
+                                        <td>{$group['title']}</td>
+                                        <td>{$group['create_time']|date="Y-m-d H:i:s",###}</td>
+                                        <if condition="$group.id eq '1'">
+                                            <td><a class="option disable-option" href="javascript:void(0)">授权/编辑</a>|<a class="option disable-option" data-id="{$group['id']}">删除</a></td>
+                                            <else />
+                                            <td><a class="option" href="{:U('Admin/Auth/editGroup')}/id/{$group['id']}">授权/编辑</a>|<a class="option del-group" data-id="{$group['id']}">删除</a></td>
+                                        </if>
+                                    </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function(){
+            $('.del-group').click(function(){
+                var id = $(this).data('id');
+                parent.del_group(id);
+            })
+
+        })
+    </script>
+</block>

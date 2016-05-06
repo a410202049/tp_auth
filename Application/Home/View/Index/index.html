@@ -1,0 +1,212 @@
+<extend name="common/base"/>
+<block name="content">
+  <div class="container">
+    <div class="wrap-left pull-left">
+      <div class="rotaion">
+        <ul class="rotaion_list">
+          <volist name="sides" id="side">
+            <li><a href="#"><img src="/Uploads/{$side.cover}" alt="{$side.title}"></a></li>
+          </volist>
+        </ul>
+      </div>
+      <span class="most_update"><h4>最近更新</h4></span>
+      <div class="artilce-list">
+
+        <volist name="articles" id="article">
+          <if condition="$article.cover eq ''">
+            <div class="artilce-list-div">
+              <div class="mob-ctt no-cover">
+                  <h3><a target="_blank" class="transition" href="#">{$article.title}</a></h3>
+                  <div class="mob-author">
+                    <div class="author-face">
+                        <a target="_blank" href="#"><img src="http://www.auth.com/Public/admin/img/ava.png"></a>
+                    </div>
+                        <a target="_blank" href="/member/322384.html"><span class="author-name ">{$article.username}</span></a>
+                      <span class="time">{$article.updatetime}</span>
+                      <i class="icon icon-cmt"></i><em>1</em>
+                      <i class="icon icon-fvr"></i><em>0</em>
+                      <i class="icon icon-line"></i>
+                      <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
+                      <div class="qr-moments-box">
+                          <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
+                      </div>
+                      <i aid="141907" data-f="pc-qzone-index" data-location="index" class="icon icon-Qzone js-qzone js-share-article"></i>
+                  </div>
+                  <div class="mob-sub">{$article.description}</div>
+              </div>
+            </div>
+          <elseif condition="$article.isstressed eq '1'" />
+            <div class="artilce-list-div mod-b-push">
+                <div class="mod-thumb">
+                    <a target="_blank" href="#" class="transition">
+                        <img alt="#" src="/Uploads/{$article.cover}">
+                    </a>
+                </div><div class="mob-ctt">
+                    <h3><a target="_blank" class="transition" href="#">{$article.title}</a></h3>
+                    <div class="mob-author">
+                      <div class="author-face">
+                          <a target="_blank" href="#"><img src="http://www.auth.com/Public/admin/img/ava.png"></a>
+                      </div>
+                          <a target="_blank" href="/member/322384.html"><span class="author-name ">{$article.username}</span></a>
+                        <span class="time">{$article.updatetime}</span>
+                        <i class="icon icon-cmt"></i><em>1</em>
+                        <i class="icon icon-fvr"></i><em>0</em>
+                        <i class="icon icon-line"></i>
+                        <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
+                        <div class="qr-moments-box">
+                            <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
+                        </div>
+                        <i aid="141907" data-f="pc-qzone-index" data-location="index" class="icon icon-Qzone js-qzone js-share-article"></i>
+                    </div>
+                    <div class="mob-sub">{$article.description|msubstr=0,55}</div>
+                </div>
+              </div>
+          <else />
+            <div class="artilce-list-div">
+                <div class="mod-thumb">
+                    <a target="_blank" href="#" class="transition">
+                        <img alt="#" src="/Uploads/{$article.cover}">
+                    </a>
+                </div><div class="mob-ctt">
+                    <h3><a target="_blank" class="transition" href="#">{$article.title}</a></h3>
+                    <div class="mob-author">
+                      <div class="author-face">
+                          <a target="_blank" href="#"><img src="http://www.auth.com/Public/admin/img/ava.png"></a>
+                      </div>
+                          <a target="_blank" href="/member/322384.html"><span class="author-name ">{$article.username}</span></a>
+                        <span class="time">{$article.updatetime}</span>
+                        <i class="icon icon-cmt"></i><em>1</em>
+                        <i class="icon icon-fvr"></i><em>0</em>
+                        <i class="icon icon-line"></i>
+                        <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
+                        <div class="qr-moments-box">
+                            <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
+                        </div>
+                        <i aid="141907" data-f="pc-qzone-index" data-location="index" class="icon icon-Qzone js-qzone js-share-article"></i>
+                    </div>
+                    <div class="mob-sub">{$article.description|msubstr=0,55}</div>
+                </div>
+              </div>
+          </if>
+
+
+
+      </volist>
+
+
+
+<!-- mod-b-push -->
+
+
+
+      </div>
+
+      <!-- <div data-cur-page="1" class="get-mod-more js-get-mod-more-list transition">点击加载更多</div> -->
+      {$page}
+
+    </div>
+    <div class="wrap-right pull-right">
+      <!-- 340px 274px广告 -->
+      <div class="ad-box box-top">
+        <img src="__PUBLIC__/home/images/ad.jpg">
+      </div>
+      <div class="tag-list">
+        <ul class="car-models">
+          <li><a href="#">商务</a></li>
+          <li><a href="#">自行式</a></li>
+          <li><a href="#">国产</a></li>
+          <li><a href="#">C1</a></li>
+        </ul>
+        <ul class="car-type">
+          <li><a href="#">福特</a></li>
+          <li><a href="#">奔驰</a></li>
+          <li><a href="#">依维柯</a></li>
+          <li><a href="#">皮卡</a></li>
+        </ul>
+        <ul class="car-price">
+          <li><a href="#">10-20</a></li>
+          <li><a href="#">20-30</a></li>
+          <li><a href="#">30-50</a></li>
+          <li><a href="#">50-80</a></li>
+        </ul>
+      </div>
+      <div class="select-div">
+          <!-- 品牌 -->
+          <select id="brand" class="c-select">
+              <option value="0">品牌</option>
+              <option value="1">奥迪</option>
+              <option value="2">奔驰</option>
+              <option value="3">宝马</option>
+              <option value="4">比亚迪</option>
+              <option value="5">大众</option>
+          </select>
+          <!-- 车系 -->
+          <select id="series" class="c-select">
+              <option value="0">车系</option>
+              <option value="1">奥迪</option>
+              <option value="2">奔驰</option>
+              <option value="3">宝马</option>
+              <option value="4">比亚迪</option>
+              <option value="5">大众</option>
+          </select>
+      </div>
+
+      <div class="box-topic">
+          <div class="topic-title-bbs">
+              <h4>热门推荐</h4>
+          </div>
+          <div class="topic-content">
+            <div class="slide_container">
+              <ul class="rslides" id="slider">
+                <volist name="hotsPic" id="pic">
+                  <li>
+                    <a href="#"><img src="/Uploads/{$pic.cover}"></a>
+                  </li>
+                </volist>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+      <div class="slider-right-list">
+        <ul>
+          <volist name="hotsText" id="text" key='k'>
+              <li><a target="_blank" title="{$text.title}" href="#">{$k}.{$text.title|msubstr=0,17}</a></li>
+          </volist>
+        </ul>
+      </div>
+      
+      <div class="box-moder">
+          <div class="box-moder-title">
+            <span class="span-mark"></span>
+            <div class="moder-title">特别推荐</div>
+            <span class="moder-more">
+              <a target="_blank" class="transition" href="/chuangye">全部</a>
+            </span>
+          </div>
+          <div class="box-moder-content">
+            <ul>
+                <volist name="isspecial" id="special">
+                  <li>
+                      <div class="article-pic">
+                          <a><img src="/Uploads/{$special.cover}"></a>
+                      </div>
+                      <div class="article-content">
+                          <div class="article-title-special">
+                              <a target="_blank" class="transition" href="#">{$special.title}</a>
+                          </div>
+                          <p>{$special.username}</p>
+                      </div>
+                  </li>
+                </volist>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="ad-box bottom-ad">
+        <img src="__PUBLIC__/home/images/ad2.jpg">
+      </div>
+    </div>
+</div>
+
+</block>

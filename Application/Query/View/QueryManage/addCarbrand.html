@@ -1,0 +1,117 @@
+<extend name="common/base"/>
+<block name="css">
+    <!-- Data Tables -->
+    <link href="__PUBLIC__/query/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/query/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <style type="text/css">
+        .option-a{
+            color: #1ab394;
+        }
+    </style>
+</block>
+<block name="container">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>品牌管理</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a>车型管理</a>
+                </li>
+                <li>
+                    <strong>品牌管理</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>品牌列表</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+					<form method="post" class="form-horizontal" id="carbrandFrom">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">首字母</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="FirstLetter" aria-required="true" required="">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">品牌名称</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="Name" aria-required="true" required=""> 
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary" type="submit" >保存内容</button>
+                                <a href="{:U('QueryManage/carbrandManage')}" class="btn btn-white">取消</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+</block>
+<block name="script">
+    <script src="__PUBLIC__/query/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/query/js/plugins/validate/messages_zh.min.js"></script>
+    <script type="text/javascript">
+    	$.validator.setDefaults({
+            highlight: function (element) {
+                $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+            },
+            success: function (element) {
+                element.closest('.form-group').removeClass('has-error').addClass('has-success');
+            },
+            errorElement: "span",
+            errorClass: "help-block m-b-none",
+            validClass: "help-block m-b-none",
+            submitHandler: function(form) {
+
+				$.ajax({  
+					url : "{:U('QueryManage/addCarbrandMethod')}",  
+					type : "post",  
+					dataType : "json",  
+					data: $("#carbrandFrom").serialize(),  
+					success : function(result) {
+						if(result.status =='success'){
+							layer.msg('保存品牌成功', {
+							  icon: 1,
+							  time: 1000
+							}, function(){
+							  window.location = "{:U('QueryManage/carbrandManage')}"
+							}); 
+						}else{
+							layer.msg(result.message, {icon: 2});
+						}
+					},
+					error:function(result){
+						layer.msg('保存品牌失败', {icon: 2});
+					}
+				})
+            }
+        });
+
+		$().ready(function () {
+	        $("#carbrandFrom").validate();
+		});
+    </script>
+</block>

@@ -1,0 +1,168 @@
+<extend name="common/base"/>
+<block name="css">
+    <!-- Data Tables -->
+    <link href="__PUBLIC__/query/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/query/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <style type="text/css">
+        .option-a{
+            color: #1ab394;
+        }
+        .factory-tr{display: none;}
+        .carseries-tr,.carseries-parent-tr{display: none;}
+        /*.carspec-tr{display: none;}*/
+        .fa-plus-square,.fa-minus-square{cursor: pointer;}
+    </style>
+</block>
+<block name="container">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>品牌管理</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a>车型管理</a>
+                </li>
+                <li>
+                    <strong>品牌管理</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>品牌列表</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                <a href="{:U('QueryManage/addCarbrand')}" class="btn btn-primary " id="add-carbrand">添加品牌</a>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>品牌名称</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <volist name="data" id="da">
+                                    <!-- 品牌列表 -->
+                                    <tr class="carbrand-tr" data-val="{$da['brandid']}">
+                                        <td><notempty name="da['factoryName']"><i class="fa fa-plus-square"></i><else /><i class="fa fa fa-minus-square"></i></notempty>&nbsp;&nbsp;
+                                        <a href="{:U('QueryManage/specList')}/id/{$da['brandid']}" target="rightMain">{$da.name}(品牌)</a></td>
+                                        <td><a class="option-a" href="{:U('QueryManage/editCarbrand')}/id/{$da.brandid}">编辑</a>&nbsp;|&nbsp;<a class="option-a del" href="javascript:void(0);" data-val="{$da.brandid}">删除</a>
+                                        </td>
+                                    </tr>
+                                    <volist name="da['factoryName']" id="daChild">
+                                        <!-- 车商列表 -->
+                                        <tr class="factory-tr carseries-parent-tr" data-val="{$da['brandid']}">
+                                            <td >
+                                                &nbsp; &nbsp; &nbsp; &nbsp;<notempty name="daChild['seriesChild']"><i class="fa fa-plus-square"></i><else /><i class="fa fa fa-minus-square"></i></notempty>&nbsp; &nbsp;{$daChild['factoryname']}(车商)
+                                            </td>
+                                            <td><a class="option-a" href="#">编辑</a></td>
+                                        </tr>
+                                        <tr class="carseries-parent-tr" data-val="{$da['brandid']}">
+                                           <td colspan="4">
+                                                <table class="table table-bordered">
+                                                    <tbody>
+                                                        <volist name="daChild['seriesChild']" id="series">
+                                                        <!-- 车系列表 -->
+                                                            <tr class="carseries-plus">
+                                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$series['name']}(车系)</td>
+                                                                <td><a class="option-a" href="#">编辑</a>&nbsp;|&nbsp;<a class="option-a" href="javascript:void(0);" data-val="{$da.brandid}">删除</a></td>
+                                                            </tr>
+                                                        </volist>
+                                                    </tbody>
+                                                </table>
+                                           </td> 
+                                        </tr>
+                                    </volist>
+                                </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                 {$page}
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <iframe width="100%" src="{:U('QueryManage/specList')}" name="rightMain"  style="height: 673px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        $(function(){
+            $('.del').click(function(){
+                var delObj = $(this);
+                var data = $(this).data('val');
+                layer.confirm('你确定要删除当前品牌？', {
+                  btn: ['确定','取消'] //按钮
+                }, function(index){
+                    $.get("{:U('QueryManage/delCarbrand')}/id/"+data, function(result){
+                        // layer.close(index);
+                        if(result.status =='error'){
+                            layer.msg(result.message, {icon: 2});
+                        }else{
+                            layer.msg(result.message, {icon: 1});
+                            layer.close(index);
+                            delObj.closest('tr').remove();
+                        }
+                    });
+                });
+            })
+
+
+            $('.carbrand-tr .fa-plus-square').click(function(){
+                var t = $(this);
+                var tr = $(this).closest('tr');
+                if(tr.attr('data-check')=='1'){
+                    tr.attr('data-check',0);
+                    var num = tr.data('val');
+                    $(".factory-tr[data-val="+num+"]").css('display','none');
+                    $(".carseries-parent-tr[data-val="+num+"]").css('display','none');
+                    t.removeClass('fa-minus-square').addClass('fa-plus-square');
+                }else{
+                    tr.attr('data-check',1);
+                    var num = tr.data('val');
+                    $(".factory-tr[data-val="+num+"]").css('display','table-row');
+                    $(".carseries-parent-tr[data-val="+num+"][data-check=1]").next('tr').css('display','table-row');
+                    t.removeClass('fa-plus-square').addClass('fa-minus-square');
+                }
+            })
+
+            $('.factory-tr .fa-plus-square').click(function(){
+                var t = $(this);
+                var tr = $(this).closest('tr');
+                if(tr.attr('data-check')=='1'){
+                    tr.attr('data-check',0);
+                    tr.next('tr').css('display','none');
+                    t.removeClass('fa-minus-square').addClass('fa-plus-square');
+                }else{
+                    tr.attr('data-check',1);
+                    tr.next('tr').css('display','table-row');
+                    t.removeClass('fa-plus-square').addClass('fa-minus-square');
+                }
+            })
+
+
+        })
+    </script>
+</block>

@@ -1,0 +1,119 @@
+
+
+<extend name="common/base"/>
+<block name="content">
+
+  <div class="container">
+    <div class="wrap-left pull-left">
+      <span class="most_update"><span class="crumbs"><span>首页</span>>><a href="#">资讯</a></span></span>
+      <div class="artilce-content">
+          <h1 class="article-title">面对刷单和假货，淘宝表示很无奈，那执法部门呢？</h1>
+          <div class="article-author">
+                <span class="author-name">作者：
+                  <a target="_blank" href="/member/1407508.html">{$data.username}</a>
+                </span>
+                <span class="article-time">{$data.updatetime}</span>
+                <span class="article-share">来源：{$data.source}</span>
+                <span class="article-pl">评论：4</span>
+          </div>
+        <div class="outline">
+            <p>导读 : {$data.description}</p>
+        </div>
+        <div class="article-content-text">
+            {$data.content}
+        </div>
+
+        <div class="tag-box">
+            <ul>
+                <volist name="data['keywords']" id="keyword">
+                  <a href="javascript:void(0);"><li class="transition">{$keyword}</li></a>
+                </volist>
+            </ul>
+        </div>
+      </div>
+<div class="comment-div">
+    <p class="comment">
+      <span class="span-mark-author">发表评论</span>
+    </p>
+
+    <div class="no-login-box ">
+        <a class="moder-lgn-box">登录</a>后参与评论
+    </div>
+	<div class="comment-list">
+	    <div id="g_pid562089" data-pid="562089" class="pl-box-wrap  ">
+	        <div class="pl-box-top">
+	            <div class="author-info">
+	                <div class="author-face"><img src="http://images.huxiu.com/auth/data/avatar/2.jpg!150x150?imageMogr2/strip/interlace/1/quality/85/format/jpg!150x150"></div>
+	                <span class="author-name"><a href="/member/1353258.html">Jizhi聚焦谢文静</a></span>
+	                <span class="time">1小时前</span>
+	            </div>
+	            <div class="pl-content">常识引导认知，万达两个字就代表万达集团！如果说非要加歧义，麻烦你能打个引号可以吗？！不然你的文章就会减分！</div>
+	        </div>
+	    </div>
+
+	    <div id="g_pid562089" data-pid="562089" class="pl-box-wrap  ">
+	        <div class="pl-box-top">
+	            <div class="author-info">
+	                <div class="author-face"><img src="http://images.huxiu.com/auth/data/avatar/2.jpg!150x150?imageMogr2/strip/interlace/1/quality/85/format/jpg!150x150"></div>
+	                <span class="author-name"><a href="/member/1353258.html">Jizhi聚焦谢文静</a></span>
+	                <span class="time">1小时前</span>
+	            </div>
+	            <div class="pl-content">常识引导认知，万达两个字就代表万达集团！如果说非要加歧义，麻烦你能打个引号可以吗？！不然你的文章就会减分！</div>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
+    </div>
+    <div class="wrap-right pull-right">
+      
+      <div class="slider-box-right">
+        <div class="box-topic">
+            <div class="topic-title-bbs">
+                <h4>猜你喜欢</h4>
+            </div>
+        </div>
+
+        <div class="slider-right-list">
+          <ul>
+            <volist name="youLike" id="text" key='k'>
+                <li><a target="_blank" title="{$text.title}" href="#">{$k}.{$text.title|msubstr=0,17}</a></li>
+            </volist>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="box-moder">
+          <div class="box-moder-title">
+            <span class="span-mark"></span>
+            <div class="moder-title">特别推荐</div>
+            <span class="moder-more">
+              <a target="_blank" class="transition" href="/chuangye">全部</a>
+            </span>
+          </div>
+          <div class="box-moder-content">
+            <ul>
+                <volist name="isspecial" id="special">
+                  <li>
+                      <div class="article-pic">
+                          <a><img src="/Uploads/{$special.cover}"></a>
+                      </div>
+                      <div class="article-content">
+                          <div class="article-title-special">
+                              <a target="_blank" class="transition" href="#">{$special.title}</a>
+                          </div>
+                          <p>{$special.username}</p>
+                      </div>
+                  </li>
+                </volist>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="ad-box bottom-ad">
+        <img src="__PUBLIC__/home/images/ad2.jpg">
+      </div>
+    </div>
+</div>
+</block>
