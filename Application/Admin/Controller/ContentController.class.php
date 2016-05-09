@@ -430,6 +430,7 @@ class ContentController extends AdminController {
         $id = $arr['id'];
         $linkage = M('linkage','sys_');
         $linkage->where(array('id'=>$id))->delete();
+        $linkage->where(array('parentid'=>$id))->delete();
         $this->resultMsg('success','删除成功'); 
     }   
 
