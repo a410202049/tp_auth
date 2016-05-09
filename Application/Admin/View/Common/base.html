@@ -557,6 +557,26 @@
             }) 
         }
 
+        function del_linkage(id){
+            layer.confirm('您确定要删除此联动？', {icon: 3, title:'确认删除联动菜单'}, function(index){
+                $.ajax({
+                    type:"POST",
+                    url:"{:U('Admin/Content/delLinkage')}",
+                    data:{id:id},
+                    dataType:"json",
+                    success:function(data){
+                        if(data.status=='success'){
+                            layer.msg(data.message,{icon: 1});
+                            document.getElementById('rightMain').contentWindow.location.reload(true);
+                            layer.close(index);
+                        }else{
+                            layer.msg(data.message,{icon: 2});
+                        }
+                    }
+                })
+            
+            }) 
+        }
 
         //添加分类弹窗
         function add_category(){

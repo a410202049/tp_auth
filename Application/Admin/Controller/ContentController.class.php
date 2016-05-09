@@ -361,4 +361,76 @@ class ContentController extends AdminController {
         $this->resultMsg('success','删除属性成功');
     }
 
+    /**
+     * 联动菜单列表
+     */
+    function linkage(){
+        $linkage = M('linkage','sys_');
+        $linkages = $linkage->field('name,id,parentid')->select();
+        $tree=new \Org\Util\tree;
+        $tree->icon = array('&nbsp;&nbsp;&nbsp;','&nbsp;&nbsp;&nbsp;├─ ','&nbsp;&nbsp;&nbsp;└─ ');
+        $tree->nbsp = '&nbsp;&nbsp;&nbsp;';
+        $tdStr = "<tr>
+                    <td>\$id</td>
+                    <td>\$spacer\$name</td>
+                    <td><a class='option' href='".U('Admin/Content/addLinkage')."/id/\$id'>添加子菜单</a>|<a class='option edit-menu' href='".U('Admin/Content/editLinkage')."/id/\$id'>编辑</a>|<a class='option del-linkage' data-val='\$id'>删除</a></td>
+                </tr>";
+        $tree->init($linkages);
+        $tr = $tree->get_tree(0, $tdStr);
+        $this->assign('tr',$tr);
+        $this->display();
+    }
+
+    /**
+     * 添加联动
+     */
+    function addLinkage(){
+        $arr = I();
+        $linkage = M('linkage','sys_');
+        $id = isset($arr['id']) ? $arr['id'] : 0;
+        if(IS_POST){
+            $data = array('name'=>$arr['name'],'parentid'=>$id);
+            if($linkage->where($data)->find()){
+                $this->resultMsg('error','联动菜单名称已经存在');    
+            }
+            $linkage->add($data);
+            $this->resultMsg('success','添加成功');  
+        }else{
+            $this->assign('id',$id);
+            $this->display();
+        }
+    }
+
+     /**
+     * 编辑联动
+     */
+    function editLinkage(){
+        $arr = I();
+        $linkage = M('linkage','sys_');
+        $id = $arr['id'];
+        if(IS_POST){
+            $re = $linkage->find($id);
+            $data = array('name'=>$arr['name'],'parentid'=>$re['parentid']);
+            $data['id'] = array('neq',$id);
+            if($linkage->where($data)->find()){
+                $this->resultMsg('error','联动菜单名称已经存在');    
+            }
+            $linkage->where(array('id'=>$id))->save(array('name'=>$arr['name']));
+            $this->resultMsg('success','编辑成功');  
+        }else{
+            $data = $linkage->find($id);
+            $this->assign('data',$data);
+            $this->assign('id',$id);
+            $this->display();
+        }
+    }
+
+    function delLinkage(){
+        $arr = I();
+        $id = $arr['id'];
+        $linkage = M('linkage','sys_');
+        $linkage->where(array('id'=>$id))->delete();
+        $this->resultMsg('success','删除成功'); 
+    }   
+
 }
