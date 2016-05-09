@@ -12,9 +12,11 @@ class AdminController extends CommonController {
 			$this->redirect('Admin/Index/login');
 		}
 
-
-		$this->assign('userinfo',session('userinfo'));
-		$userinfo = session('userinfo');
+		$user = M('user','sys_');
+		$uinfo = session('userinfo');
+		$userinfo = $user->where(array('id'=>$uinfo['id']))->find();
+		$userinfo['groupname'] = $uinfo['groupname'];
+		$this->assign('userinfo',$userinfo);
 		$this->uid = $userinfo['id'];
 		$m = M('auth_rule','sys_');
 		$field = 'id,name,title,icon';

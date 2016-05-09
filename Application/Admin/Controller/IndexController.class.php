@@ -163,4 +163,21 @@ class IndexController extends AdminController {
     }
   }
 
+
+  /**
+   * 头像上传
+   */
+  public function shearPhoto(){
+    if(IS_POST){
+        require($_SERVER['DOCUMENT_ROOT'].'/Public/shearphoto_common/php/shearphoto.php');
+        $avatar = $result ? $result[0]['ImgName'] : '';
+        $user = M('user','sys_');
+        $user->where(array('id'=>$this->uid))->save(array('avatar'=>$avatar));
+        exit;
+    }else{
+        $this->display();
+    }
+  }
+
+
 }

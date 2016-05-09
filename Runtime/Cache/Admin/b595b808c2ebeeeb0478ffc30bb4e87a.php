@@ -35,8 +35,11 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
                     <li class="nav-header">
-                        <div class="dropdown profile-element"> <span>
-                            <img alt="image" class="img-circle" src="/Public/admin/img/ava.png" width="64" height="64" />
+                        <div class="dropdown profile-element"> 
+                            <span>
+                                <?php if(empty($userinfo['avatar'])): ?><img alt="image" class="img-circle" src="/Public/uploads/users/default_small.png" width="64" height="64" />
+                                <?php else: ?>
+                                    <img alt="image" class="img-circle" src="/Public/uploads/users/<?php echo ($userinfo['avatar']); ?>" width="64" height="64" /><?php endif; ?>
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0);">
                                 <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><?php echo ($userinfo['username']); ?></strong>
@@ -44,6 +47,8 @@
                             </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="<?php echo U('Admin/Index/changePassword');?>" target="rightMain">修改密码</a>
+                                </li>
+                                <li><a href="<?php echo U('Admin/Index/shearPhoto');?>" target="rightMain">修改头像</a>
                                 </li>
                                 <li class="divider"></li>
                                 <li><a href="<?php echo U('Admin/Index/logout');?>">安全退出</a>
@@ -505,6 +510,27 @@
                 $.ajax({
                     type:"POST",
                     url:"<?php echo U('Admin/Auth/delUser');?>",
+                    data:{id:id},
+                    dataType:"json",
+                    success:function(data){
+                        if(data.status=='success'){
+                            layer.msg(data.message,{icon: 1});
+                            document.getElementById('rightMain').contentWindow.location.reload(true);
+                            layer.close(index);
+                        }else{
+                            layer.msg(data.message,{icon: 2});
+                        }
+                    }
+                })
+            
+            }) 
+        }
+
+        function del_attr(id){
+            layer.confirm('您确定要删除此属性？', {icon: 3, title:'确认删除属性'}, function(index){
+                $.ajax({
+                    type:"POST",
+                    url:"<?php echo U('Admin/Content/delAttr');?>",
                     data:{id:id},
                     dataType:"json",
                     success:function(data){
