@@ -46,6 +46,14 @@
                                         <option value="radio" <if condition="$data.type eq 'radio'">selected</if>>radio</option>
                                         <option value="textarea" <if condition="$data.type eq 'textarea'">selected</if>>textarea</option>
                                         <option value="linkage" <if condition="$data.type eq 'linkage'">selected</if>>linkage</option>
+                                    </select> 
+                                </div>
+                                <div class="col-sm-2" id="linkage-div" style="<if condition='$data.type eq linkage'>display:block;<else />display:none;</if>">
+                                    <select class="form-control valid" name="linkage" id="linkage">
+                                        <option value="0">请选择</option>
+                                        <volist name="linkages" id="link">
+                                            <option value="{$link['id']}" <if condition='$link.id eq $opstr'>selected=selected</if>>{$link['name']}</option>
+                                        </volist>
                                     </select>                     
                                 </div>
                         </div>
@@ -88,10 +96,22 @@
             $('#type').change(function(){
                 if($(this).val() == 'checkbox' || $(this).val() == 'radio' || $(this).val() == 'linkage'){
                     $('#att-val').css('display','block');
+                    if($(this).val() == 'linkage'){
+                        $('#linkage-div').css('display','block');
+                    }else{
+                        $('#linkage-div').css('display','none');
+                    }
                 }else{
                     $('#att-val').css('display','none');
+                    $('#linkage-div').css('display','none');
+                    
                 }
             });
+
+            $('#linkage').change(function(){
+                $('input[name=value]').val($(this).val());
+            });
+
 
             $("#add-attr").validate({
                 rules: {

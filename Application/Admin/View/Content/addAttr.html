@@ -47,6 +47,15 @@
                                         <option value="linkage">linkage</option>
                                     </select>                     
                                 </div>
+
+                                <div class="col-sm-2" id="linkage-div" style="display: none;">
+                                    <select class="form-control valid" name="linkage" id="linkage">
+                                        <option value="0">请选择</option>
+                                        <volist name="linkages" id="link">
+                                            <option value="{$link['id']}">{$link['name']}</option>
+                                        </volist>
+                                    </select>                     
+                                </div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group" id="att-val" style="display: none;">
@@ -87,9 +96,20 @@
             $('#type').change(function(){
                 if($(this).val() == 'checkbox' || $(this).val() == 'radio' || $(this).val() == 'linkage'){
                     $('#att-val').css('display','block');
+                    if($(this).val() == 'linkage'){
+                        $('#linkage-div').css('display','block');
+                    }else{
+                        $('#linkage-div').css('display','none');
+                    }
                 }else{
                     $('#att-val').css('display','none');
+                    $('#linkage-div').css('display','none');
+                    
                 }
+            });
+
+            $('#linkage').change(function(){
+                $('input[name=value]').val($(this).val());
             });
 
             $("#add-attr").validate({
@@ -105,6 +125,10 @@
                         if(!$val){
                              layer.msg('选项不能为空',{icon: 2});
                              return false;
+                        }
+                        if($('#type').val() == 'linkage' && $('#linkage').val()=='0'){
+                            layer.msg('请选择联动菜单',{icon: 2});
+                            return false;
                         }
                     }
                     $.ajax({

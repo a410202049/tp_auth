@@ -244,6 +244,7 @@ class ContentController extends AdminController {
             switch ($arr['type']) {
                 case 'checkbox':
                 case 'radio':
+                case 'linkage':
                     $values = explode(',',str_replace("，",",",$arr['value']));
                     break;
                 default:
@@ -272,6 +273,9 @@ class ContentController extends AdminController {
             $this->resultMsg('success','属性添加成功');
         }else{
             $category = M('category','sys_');
+            $linkage = M('linkage','sys_');
+            $where['parentid'] = array('eq','0');
+            $linkages = $linkage->where($where)->select();
             $cateArr = $category->field('name,parentid,id')->select();
             $tree=new \Org\Util\tree;
             $tree->icon = array('&nbsp;&nbsp;&nbsp;','&nbsp;&nbsp;&nbsp;├─ ','&nbsp;&nbsp;&nbsp;└─ ');
@@ -280,6 +284,7 @@ class ContentController extends AdminController {
             $str = "<option value=\$id >\$spacer\$name</option>";
             $categoryTree = $tree->get_tree(0,$str,1);
             $this->assign('option',$categoryTree);
+            $this->assign('linkages',$linkages);
             $this->display();
         }
     }
@@ -292,6 +297,7 @@ class ContentController extends AdminController {
             switch ($arr['type']) {
                 case 'checkbox':
                 case 'radio':
+                case 'linkage':
                     $values = explode(',',str_replace("，",",",$arr['value']));
                     break;
                 default:
@@ -324,12 +330,15 @@ class ContentController extends AdminController {
             $this->resultMsg('success','属性编辑成功');
         }else{
             $arr = I();
+            $linkage = M('linkage','sys_');
+            $where['parentid'] = array('eq','0');
+            $linkages = $linkage->where($where)->select();
             $category = M('category','sys_');
             $attr = M('attr','sys_');
             $attr_option = M('attr_option','sys_');
             $data = $attr->find($arr['id']);
             $opstr = "";
-            if($data['type'] =='checkbox' || $data['type'] =='radio'){
+            if($data['type'] =='checkbox' || $data['type'] =='radio' || $data['type'] =='linkage'){
                 $options = $attr_option->where(array('attid'=>$data['id']))->select();
                 $options = array_column($options,'value');
                 $opstr = implode(',',$options);
@@ -347,6 +356,7 @@ class ContentController extends AdminController {
             $this->assign('option',$categoryTree);
             $this->assign('data',$data);
             $this->assign('opstr',$opstr);
+            $this->assign('linkages',$linkages);
             $this->display();
         }
     }

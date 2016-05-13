@@ -11,7 +11,7 @@ class ArticleController extends AdminController {
     public function index(){
     	$article = M('article','sys_');
     	$count      = $article->count();// 查询满足要求的总记录数
-        $Page       = new \Common\Tools\Page($count,20);
+        $Page       = new \Common\Tools\Page($count,2);
         $Page->setConfig('prev', '<span aria-hidden="true">«</span>');
         $Page->setConfig('next', '<span aria-hidden="true">»</span>');
         $Page->setConfig('first', '首页');
@@ -35,6 +35,7 @@ class ArticleController extends AdminController {
             $arr['isslide'] = $arr['isslide'] ? '1' : '0';
             $arr['ishot'] = $arr['ishot'] ? '1' : '0';
             $arr['isspecial'] = $arr['isspecial'] ? '1' : '0';
+            $arr['isstressed'] = $arr['isstressed'] ? '1' : '0';
     		$arr['createtime'] = time();
     		$arr['updatetime'] = time();
     		$arr['uid'] = $this->uid;
@@ -71,6 +72,7 @@ class ArticleController extends AdminController {
             $arr['isslide'] = $arr['isslide'] ? '1' : '0';
             $arr['ishot'] = $arr['ishot'] ? '1' : '0';
             $arr['isspecial'] = $arr['isspecial'] ? '1' : '0';
+            $arr['isstressed'] = $arr['isstressed'] ? '1' : '0';
     		$article->save($arr);
     		$this->resultMsg('success','文章编辑成功');
     	}else{
