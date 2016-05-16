@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50547
 File Encoding         : 65001
 
-Date: 2016-05-09 19:18:09
+Date: 2016-05-16 18:59:25
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -50,7 +50,7 @@ INSERT INTO `sys_article` VALUES ('12', '为什么说Facebook与百度正在快�
 INSERT INTO `sys_article` VALUES ('13', '让奥巴马、默多克都试戴的这款VR眼镜，什么来头？', 'VR', '', '这之后，PMD与Inifeon之间合作开发3D影响感测技术至今，设计了REAL3 3D图像传感器芯片，并联手参与到了谷歌的Tango项目中。Tango项目希通过来自传感器和摄像头的数据将人类的视觉带入移动设备之中', '2016-04-27/57205b7feb13e.jpg', '&lt;p&gt;其实，这只VR眼镜并不像Oculus Rift或者HTC Vive那么先进，它只比之前谷歌发布的Cardboard稍微复杂一点点。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;这只得到了奥巴马及默克尔青睐的VR眼镜由易福门电子（IFM Electronic）生产，据白宫的新闻稿透露，这款VR眼镜采用了和Cardboard一样的光学系统，以手机屏幕作为显示屏展示3D视图，单比Cardboard多一个内置sensor。内置的“世界上最小的3D相机”可以收录用户的手部热度信息并投在屏幕。该VR设备准备在2016年的下半年推出，可以连接到智能手机。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;简单来说，这个设备可以追踪用户的手部信息：&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_inh3kcfm&quot; src=&quot;http://images.huxiu.com/article/content/201604/26/1514370756.png?imageMogr2/strip/interlace/1/quality/85/format/png&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;实际上，IFM电子是PMD科技附属公司，而PMD科技的主要研究方向为3D技术及手部交互。PMD科技创立于2002年，是西根大学传感器系统中心的一个衍生公司。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;2012年底，Leap Motion在当年5月推出了口香糖大小的手势交互产品Leap而出名，它能够创造出约0.11平方米的空间，在这个空间里，Leap可以捕捉到用户10个手指发出的动作，而误差只在1/100毫米以内，据称它比当时的技术还要再精准200倍。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_inh2h3ak&quot; src=&quot;http://images.huxiu.com/article/content/201604/26/1443527040.png?imageMogr2/strip/interlace/1/quality/85/format/png&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;之后2013年初，PMD科技与Inifeon（英飞凌）共同生产了一款3D手势交互设备，名为CamBoard Pico，用法和Leap类似。该公司的发言人也颇有信心的表示其产品精敏度超过Leap，公司竞争力超过Leap Motion。这款设备基于 PMD的动态手势辨识技术识别手势，比如下图就展示了它的一种用途。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://images.huxiu.com/article/content/201604/26/1452476065.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;随后，PMD和Inifeon再次合作生产了CamBoard Pico的姐妹产品CamBoard Pico S。PMD 主要负责主动式雷射扫描仪机构，提供飞时测距（time of flight）形成景深数据部分；Infineon 则负责 CMOS 集成电路制程的芯片制造，其中整合了智能型序列程序、矩阵调变信号驱动程序和数字 / 模拟转换器。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;这之后，PMD与Inifeon之间合作开发3D影响感测技术至今，设计了REAL3 3D图像传感器芯片，并联手参与到了谷歌的Tango项目中。Tango项目希通过来自传感器和摄像头的数据将人类的视觉带入移动设备之中。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;所以奥巴马与默多克的联手高调站台，好似代表着美方公司（谷歌）与德方公司（PMD、Inifeon）的合作。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;最后说下中国。今年来自中国的参展商约有630家，数量仅次于德国本土参展商。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;2015年时候，德国提出“工业4.0”、美国提出“工业互联网”，之后，中国提出了“中国制造2025”（即到2025年迈入制造强国行列）。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;但在去年的汉诺威工博会上，曾有中国与会者提出“中国制造正在被边缘化”，因为“中国制造在工业4.0的高科技展馆里找不到”以及“许多客户对中国制造不信任，不屑和发怵，很远看到中国的参展专区就止步了，好一点的是走马观花、匆匆走过，问他们是否有兴趣，他们只是笑而不答。”&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;今年在会上，由佛山市发起的中德工业城市联盟宣布成立，城市联盟包括11个中国城市以及7个德国城市。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;', '33', '1461738343', '1461738343', '1', '1', '0', '1', '0', '1', '1');
 INSERT INTO `sys_article` VALUES ('14', '百度投资了哪些汽车交通领域公司？', '爱奇艺，百度', '', '流投入O2O领域， 但在汽车交通领域的投资来说，却一直属于落后和追赶者角色。回顾过去三年百度在汽车交通领域的投资，车事儿兄认为，无人驾驶领域前景广阔但技术难度过于艰 巨，百度面临破局。除了押注无人车，在其他的汽', '2016-04-27/57205baa95bc5.jpg', '&lt;p&gt;“除了连接人和信息，还要连接人和服务”。这是百度近年来强调的战略重点。过去三年间，百度也效仿腾讯和阿里巴巴，手握大量现金流投入O2O领域，\r\n但在汽车交通领域的投资来说，却一直属于落后和追赶者角色。回顾过去三年百度在汽车交通领域的投资，车事儿兄认为，无人驾驶领域前景广阔但技术难度过于艰\r\n巨，百度面临破局。除了押注无人车，在其他的汽车交通的投资布局上，百度投资的企业喜忧参半，正在上演生死时速。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;一、百度投资了哪些汽车交通领域公司？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;以\r\n往在PC时代，百度的投资非常强势，例如在爱奇艺、91、糯米、去哪儿等企业上追求绝对控股。进入移动互联网时代后，百度的投资版图随着生态的建立，更加\r\n具有选择性。李彦宏也曾表示，在投资前“我会询问团队协同效应是什么。如果要投资，就得先达成合作。”在汽车领域的投资同样秉持这样的概念，给入口，给流\r\n量，共建生态，但是每家的遇到的境况却不尽相同。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;百度在汽车领域共有6项投资，相比于腾讯的18起，和阿里的13起，数量上并不多。从投资的细分领域看，交通出行占据了4起，二手车电商1起，汽车生活1起。投资的时间主要集中在2015年，相对于其他两个巨头，入局时间稍晚。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img/&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_ingzlg77&quot; src=&quot;http://images.huxiu.com/article/content/201604/26/1323138477.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot; alt=&quot;11.webp.jpg&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;二、百度投资汽车交通领域公司分析&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-sm-title&quot; label=&quot;小标题&quot;&gt;1.汽车电商&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;br/&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;投资企业：优信集团&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;百\r\n度在汽车电商的布局，主要是押注在二手车电商。。随着目前我国汽车保有量达到1.72亿辆，而新车销售在08年“婴儿潮”后逐渐放缓，目前二手车和新车的\r\n销售比在1：4，和国外成熟市场的3：1，还有极大的增长空间。二手车还存在车源分散，一车一况等情况，所以还没有哪家垂直导流网站完成大一统。以往百度\r\n搜索收入来源基本上是教育，金融，医疗等行业瓜分。无论从流量上还是行业的体量二手车电商绝对是一片汪洋大海。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;对于二手车电商领域的布局，百度押注了业内的独角兽优信集团。优信集团于2011年成立，目前有3条业务线，一条是主打B2B模式的优信拍，还有一条是主打B2C模式的优信二手车，最后还有二手车的金融业务。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;百度于2015年3月参与了优信得C轮1.7亿美金的融资。几乎与此同时，优信二手车宣布上线。值得注意的是腾讯此前已经参与过优信的A轮融资。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img/&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_ingzm2cm&quot; src=&quot;http://images.huxiu.com/article/content/201604/26/1323427592.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot; alt=&quot;12.jpg_看图王.web.jpg&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在二手车电商行业优信无疑是巨无霸，各个业务线的成绩斐然。B2B领域的优信拍在易观智库《中国二手车电子商务发展研究报告2015》中位列第二，占据27.9%的份额。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;随\r\n后重点力推的优信二手车，去年中国好声音决赛优信二手车以一则“上上上优信二手车”60秒3000万的广告打响了二手车电商广告大战。据悉，去年1年优信\r\n二手车在广告上花费达到5亿。其市场份额在艾瑞资讯的《2015H2中国二手车电子商务行业白皮书》中占据了To \r\nC市场的78.1%。在二手车金融这个领域，去年9月优信也和微众银行合作，正式推出了“付一半”的购车方案。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;最新关于优信得消息则是D轮大约4亿美金的融资传闻，总之对于百度来说，投资优信并不亏本，而且赚大了。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-sm-title&quot; label=&quot;小标题&quot;&gt;2.交通出行&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;br/&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;投资企业：Uber，51汽车，天天用车&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;目前的国内交通出行不仅是移动化的产物，也是一个巨大的O2O流量入口，还承载着共享经济的理念。对提升交通运转效率，缓解人车矛盾有着极大意义。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;与腾讯，阿里共同押注Lyft和滴滴不同。百度重心扑在了Uber身上，但同时也对国内的51用车，天天用车进行了投资。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;对于Uber的投资，其实百度分别投资了两次，第一次是对Uber的6亿美金的战略投资。Uber在经历的估值也水涨船高至700亿美元。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img/&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_ingzm9u5&quot; src=&quot;http://images.huxiu.com/article/content/201604/26/1323526152.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot; alt=&quot;13.webp.jpg&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Uber作为出行的巨头，2009年从美国加利福尼亚起家后，迅速全球化，覆盖近60个国家，260个城市。但是挑战仍然巨大，除了在北美洲和澳洲地位相对稳固外，在其他国家都面临着相应的冲击，无论是政策层面还是当地的打车软件的竞争。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img/&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_ingzmeyx&quot; src=&quot;http://images.huxiu.com/article/content/201604/26/1323591295.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot; alt=&quot;13.webp (1).jpg&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在\r\n中国Uber最大的对手就是滴滴出行，百度也投资了Uber在中国的子公司雾博中国，用以和滴滴抗衡。但去年在十亿美金的补贴下，Uber的市场份额并不\r\n占优。根据易观智库2015年11月发布的《2015年第3季度中国专车服务市场监测报告》显示， \r\n2015年第3季度，滴滴出行、Uber车分别占据83.2%、16.2%。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_ingzmyvz&quot; src=&quot;http://images.huxiu.com/article/content/201604/26/1324248673.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot; alt=&quot;14.webp.jpg&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Uber\r\n在中国的情况比较凶险，但是可以预见的是Uber超级强大的融资能力，能继续在市场中兴风作浪。但是百度投资的另外两家拼车类的出行企业，目前情况就不那\r\n么乐观了。51用车和友友用车都是以拼车起家，但是随着滴滴的入局，现在市场份额被压缩的很严重。根据易观数据报告，2015年第三季度滴滴顺风车占据了\r\n69.9%的市场份额，随后是嘀嗒拼车，天天用车和51汽车的市场份额被压到了个位数。基本上拼车市场形成了721的互联网格局。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;车事儿兄认为，&lt;strong&gt;百度希望通过投资海外的Uber，一起其他一些多样化的出行方式，实现自己在出行领域占据一席之地的策略，但其本身投入三心二意，也在重大决策中不占据太多话语权，因此，在出行这个领域，百度并不占据任何优势，甚至可以说全面落后&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-sm-title&quot; label=&quot;小标题&quot;&gt;3.汽车生活&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;目\r\n前我国的汽车保有量达到了1.72亿量，已经进入了汽车社会。但与此同时汽车生活的配套服务，例如加油，停车，汽车交友，地图等还没有健全。百度在这块选\r\n择了用地图这个切口进入布局，于2013年收购芮图旗下的“道道通“获取千万量级的数据信息，提升整个产品入口的搜索体验。&lt;/p&gt;&lt;p&gt;而随后百度地图的表现也确实惊艳，易观的《2015Q3中国手机地图市场季度数据监测》中，百度地图占领70%的市场份额。地图业务延伸，后来百度也成立了LBS事业部。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;最近百度总裁张亚勤也宣布了百度用地图来进行国家化战略，其产品已经登陆亚太18个国家和地区，并计划将于2016年年底覆盖全球150多个国家和地区。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-sm-title&quot; label=&quot;小标题&quot;&gt;4.无人汽车&lt;br class=&quot;text-sm-title&quot; label=&quot;小标题&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;无\r\n人车是汽车驾驶上的一次“革命”，通过车载传感系统感知道路环境、自动规划行车路线并自主控制到达预定目标的交通工具。其中汽车和机电，人工智能的融合产\r\n物。最先发展无人车的是谷歌公司，BAT中技术基因最强的百度同样也押注到了人工智能领域的研究，而无人车也是百度的度深度研究院（IDL）的核心项目，\r\n是李彦宏期待“弯道超车”的押注。&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;/span&gt;&lt;br/&gt;\r\n 百度无人车也不负众望，在去年12月成功从百度大厦到奥森公园完成了往返，其中最高时速达到了100公里/小时。而关心无人车的不止有李彦宏，去年在乌镇\r\n的互联网大会上，习总书记也对无人车非常有兴趣，原本停留3分钟，结果待了足足10分钟。无人车项目已经上升到国家战略意义的层面，不仅是人工智能领域，\r\n同时对汽车产业的推动也有积极重大作用。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;但是无人车目前发展还并非完全成熟，还面临着安全，法律，成本等一系列问\r\n题。百度的老大哥谷歌开发的无人车试验总里程超过100万英里（约160万公里），发生了14起车祸，最为严重的一次还出现了人员受伤。所以发展无人车这\r\n块，是个循序渐进的过程，虽然未来很可期，但还是要保持足够专注和耐心。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;对于百度在汽车交通领域的布局，可以看到无人车无疑是里面的明珠，对其他几家的投资也可圈可点，但都存在一定的风险。未来怎么走，除了看百度是否继续支持，企业发展最终还是要靠自己努力。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;', '33', '1461738445', '1461738445', '1', '1', '0', '1', '0', '0', '0');
 INSERT INTO `sys_article` VALUES ('15', 'VR电影很火? 短时间内难成一门好生意', 'HTC VIVE，电影院', '', '当 你戴上数千元的高端头盔后，没有低端设备那么明显的眩晕感，整体的视觉或许会让你眼前一亮，感觉这才是真正的VR电影体验。但加上高端电脑主机的价格，获 得一套高端消费级VR设备你或许会需要1-3万人民币，如果你是体验HTC VIVE，你甚至需要拥有一间单独的体验房间，这个价格和房间要求，让高端VR设备暂时缺乏普及的条件。这无论是对电影院的VR电影专场进行', '2016-04-27/57205c3e342ff.jpg', '&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/p&gt;&lt;p&gt;也许你很难想象得到，就在上周，笔者在长沙某地方电台竟然听到了关于VR的新闻。是的，在这样一座二线城市里，如果VR日报这类垂直新媒体全力关注VR，这是理所应当，但大众类媒体开始传播关于VR的信息，这不得不令人好奇：全国对VR已经拥有基本认知的国人究竟有多少？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;为\r\n何要好奇这个？因为，如果说VR已经成功普及到大部分的普通大众身上，基于VR而开展游戏、影视等大众化娱乐需求也会迅速激增，整个产业生态也会以迅雷不\r\n及掩耳之势完善起来。事实上，在最近的1年内，在资本、媒体、创业者的共同努力下，大量VR内容商开始出现，VR影视在热度仅次于VR游戏。在这种情况\r\n下，VR影视究竟是不是虚火？VR+电影究竟是不是一门好生意呢？&lt;/p&gt;&lt;p&gt;&lt;br label=&quot;大标题&quot; class=&quot;text-big-title&quot;/&gt;&lt;/p&gt;&lt;p label=&quot;大标题&quot; class=&quot;text-big-title&quot;&gt;明星大厂纷纷入局VR电影 电影VR化备受关注&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;正\r\n是因为VR在最近一年内备受从业者和投资人的高度认可，从此前张艺谋宣布要拍摄VR视频，到后来郭敬明要将《幻城》也拍摄VR版本，明星不提提VR似乎都\r\n赶不上时髦了。伴随着越来越多成型的VR电影短片出现，越来越多的明星也开始将自己与VR电影扯上关系，明星们在电影VR化的过程长可谓是一群相当尽职的\r\n普及者。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;与此同时，大型电影发行商和电影制作公司也大力进军VR。近日，万达院线将迪斯尼旗下电影《奇幻森林》的\r\nVR片花带到全国40多家万达影城，试图通过VR片花这等尝鲜体验更好地吸引影迷关注VR。而在此前，《火星救援》在宣传推广中，曾发布了15-20分钟\r\n的VR短片供用户体验；NBA球星詹姆斯在圣诞期间，曾联手Oculus发布了12分钟的VR小电影《追求伟大》。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;当\r\n越来越多的国际知名大厂和明星入局VR，整个电影内容的VR化不受到行业人和观众们的关注，似乎都有些匪夷所思。但从目前的市场情况来看，VR电影的营销\r\n价值大于实际观影价值，无论是摆在台前的商业变现模式，还是放在台后的软硬件技术及人才储备，VR电影在短期之内都难以成为一门好生意，要真正带来人类电\r\n影变革，VR未来或许有这个实力，但不是现在。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p label=&quot;大标题&quot; class=&quot;text-big-title&quot;&gt;为什么说VR电影短时间内难成一门好生意呢？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;为\r\n什么小谦会这样觉得呢？生意的本质离不开寻找目标消费者，离不开变现。关注VR电影的人或许是多了，但真正因为VR电影而买单的人有多少？为什么他们不愿\r\n意为现在的VR电影买单？VR电影在制作究竟是不是个高门槛的活?究竟什么样的VR电影才能深受消费者喜爱，甚至愿意为他单独买单？要真正能够解决这些难\r\n题,VR电影或许才能成为一门好生意。&lt;/p&gt;&lt;p&gt;&lt;br label=&quot;小标题&quot; class=&quot;text-sm-title&quot;/&gt;&lt;/p&gt;&lt;p label=&quot;小标题&quot; class=&quot;text-sm-title&quot;&gt;1、什么是观众最喜爱的VR电影体验？摸索期不短！&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;如同游戏产业一般，究竟怎么把VR和电影结合在一起给观众带来最合适的VR电影体验，这是个难题。变革从来不是一天两天就会突然发生，没有标杆的VR影视案例，现有的电影制作方式会否会让当下的VR电影大有制作局限，形式而高于内容本质呢？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;从\r\n大方向来说，拥有更多维度和更多感觉来表达电影故事的情节，的确能够更为细致得表达故事，让广大观影人士可以更大程度地实现身临其境，大大增强电影的代入\r\n感。但在现在来说，一方面是在VR制作领域，制作人员习惯了单个维度的电影拍摄，当前的制作思路要让电影制作人员毫无违和感地在消费者后方、左侧、右侧也\r\n做出场景出来，需要一段摸索期；另一方面，无论是用手机电脑观影，还是走进电影院带上3D眼镜，消费者目前早已习惯以接近静止的状态观看电影，如果VR电\r\n影需要让观众们一改此前的观影习惯，站立起来观影，时常将身体往左侧/右侧转动观影，甚至还要回过头去看看身后是否有更为精彩的电影内容，且不说制作方怎\r\n么解决这类体验的消费难题，要让消费者改变此前的观影习惯，这不会是一个短期工程。&lt;/p&gt;&lt;p&gt;&lt;br label=&quot;小标题&quot; class=&quot;text-sm-title&quot;/&gt;&lt;/p&gt;&lt;p label=&quot;小标题&quot; class=&quot;text-sm-title&quot;&gt;2、VR电影怎么赚钱？商业模式比VR游戏都不清晰&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;除却在体验上会令制作人员和观影人群都带来不便以外，VR电影要怎么赚钱？在上述的那些VR电影案例中，大家把VR电影更多地应用在常规电影的营销宣传上，VR电影并没有完完全全成为一个独立的消费产品。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;按理来说，在当前VR的发展状态中，商业模式是所有VR从业者共有的心病。但就拿游戏来举例，目前在steam上已经出现单款卖出20万套的VR游戏，专业的游戏平台和本身就已经成型的消费群体，让消费者能够独立地为VR游戏而买单，但VR电影显然还不行。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在\r\n市场中，VR电影以一次性消费为主，VR游戏则以深度运营后的多次消费为主。坦诚地说，当前VR游戏主要依靠玩家以购买单机碟片一般的方式获取收入，游戏\r\n内购模式暂时没能走通，手游和端游领域既有的商业模式还未能在VR游戏领域完全移植过去，新的商业模式也未衍生出来，但这也比电影强呀！VR电影是目前热\r\n度仅次于VR游戏的VR内容，但目前更多地用在了营销推广上，他目前如果都只是一个辅助内容，又怎么寻找一个可持续性的多元化商业模式呢？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p label=&quot;小标题&quot; class=&quot;text-sm-title&quot;&gt;3、技术困境 低端硬件体验差 高端硬件消费没条件&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;除此以外，一方面，在VR电影拍摄方面，由于当前产业过猛发展，优质的专业级拍摄工具需求紧缺，且价格居高不下，这就直接导致VR电影的制作成本居高不下。不少时常仅为10余分钟的电影都有可能耗资数百万。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;而另一方面，电影是一种大众类需求，而观看VR电影，暂时必须要佩戴VR设备。在当前的市场中，笔者个人认为低端硬件体验差，高端硬件消费没条件。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;为何这么说？市场上数十元的VR设备比比皆是，但其给人带来的体验却有点像伪3D，高成本的VR电影用低端电影观看的效果，有可能都会因为设备的问题而砸了VR电影的招牌。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;当\r\n你戴上数千元的高端头盔后，没有低端设备那么明显的眩晕感，整体的视觉或许会让你眼前一亮，感觉这才是真正的VR电影体验。但加上高端电脑主机的价格，获\r\n得一套高端消费级VR设备你或许会需要1-3万人民币，如果你是体验HTC \r\nVIVE，你甚至需要拥有一间单独的体验房间，这个价格和房间要求，让高端VR设备暂时缺乏普及的条件。这无论是对电影院的VR电影专场进行专场改造，还\r\n是要让消费者能够在家消费VR电影，都带来了巨大的阻碍。&lt;/p&gt;&lt;p&gt;&lt;br label=&quot;小标题&quot; class=&quot;text-sm-title&quot;/&gt;&lt;/p&gt;&lt;p label=&quot;小标题&quot; class=&quot;text-sm-title&quot;&gt;4、人才困境 人才生态完全跟不上产业发展速度&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;每一个产业的发展都离不开人才，VR目前被行业炒作得太火，VR影视作为第二大VR内容领域，尽管关注者很多。但由于VR电影整个产业此前底蕴不足，哪怕是此前专业的动漫制作或者电影拍摄人员，面对全新的软件和硬件，也需要花费不少的时间进行学习。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;VR产业突然在中国爆火，缺乏大批量能够培训新人的精英人才，人才生态难以为整个产业生态做出巨大贡献，没有大量优质的人才，怎么按时推出VR电影？怎么缩减VR电影的拍摄制作成本？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;总\r\n体来说，VR电影目前所面临的问题不少。在未来，当技术问题和产业生态问题都随着时间推移而解决后，VR电影会成为大众需求内容，但在最近几年来说，技术\r\n问题和产业问题都解决不了，没有一个清晰的商业模式，整个VR内容产业的资源也会往其他商业模式更为清晰的VR内容领域倾斜，这样一来，VR电影要解决产\r\n业生态的问题，便是遥遥无期了。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;', '33', '1461738562', '1461738562', '1', '1', '0', '1', '0', '0', '0');
-INSERT INTO `sys_article` VALUES ('16', '新浪微盘关闭在即，网盘到底犯了什么错？', '测试，百度', 'rving房车网', '虎嗅做了简单的搜索测试，想试试看微盘里究竟有什么东西值得被整改，但无奈没有交保护费的虎嗅已经完全无法使用搜索功能了。', '', '&lt;p&gt;虎嗅做了简单的搜索测试，想试试看微盘里究竟有什么东西值得被整改，但无奈没有交保护费的虎嗅已经完全无法使用搜索功能了。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_infkgcto&quot; src=&quot;http://images.huxiu.com/article/content/201604/25/1332032327.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;新浪微盘里都有什么？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;关闭的理由很是清晰，因为要配合监管部门的整改，那究竟是什么需要被整改？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;这要从新浪爱问说起。曾经，丰富的（盗版）电子书资源就让新浪爱问共享资料产生了一定的用户粘性，但新浪爱问的资源近年来已经被经过多轮整治后几乎完全找不到“资料”后，新浪爱问也失去了原有的用户地位，此时新浪微盘改头换面承担了这部分“资料”共享的任务。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_infklwu5&quot; src=&quot;http://images.huxiu.com/article/content/201604/25/1336220295.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;原先新浪爱问中的资源，以及微博中用户的上传与分享，加上对搜索引擎的宽容，使得在新浪微盘中挖掘奇奇怪怪的内容轻而易举——百度搜索屏蔽了自家百度云，反而能从微盘中搜出文件来，如果配合什么神秘代码与车牌号，新浪微盘这简直是个大“车库”，什么文件电子书电影小电影，不要太简单。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;甚至在新浪自家关了搜索以后，用百度神秘代码“&lt;strong&gt;关键词 + site:vdisk.weibo.com&lt;/strong&gt;&amp;quot;依然可以搜出新浪微盘里被分享过的内容&lt;span label=&quot;备注&quot; class=&quot;text-remarks&quot;&gt;#不要说是我告诉你的#&lt;/span&gt;。现在，好奇的围观群众你们可以去挖一下新浪微盘里都藏了些什么宝藏了。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_infky8xi&quot; src=&quot;http://images.huxiu.com/article/content/201604/25/1345570076.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;如果新浪爱问即面临版权和限制内容等影响，外加上述所说一不小心就会成为神秘资源聚集地，那微盘遭到整改也是情理之中。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;微盘既不是第一个被关闭的云存储，也不会是最后一个&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;网盘，最早出现于邮箱服务中的个人存储空间，用于临时放置文件或共享等。由于文件分享和随着移动互联网、多设备文件共享等用户刚需，独立的大容量网盘便成了必然。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;自2014年整治互联网环境以来，网络存储就是监管的重点照顾对象之一，受限于用户上传内容的不可控性，对网盘内容的审查与监管成了技术上的老大难问题，早期的网盘，比如115或酷盘等，在多次整改限制后，如115几乎完全禁止了用户间分享文件后，现在几乎已经成了空壳，成为了真正只能供付费用户存放文件的网络硬盘。得益于较强技术实力下对违禁内容的识别，目前仅有百度盘情况略好一些，但当年整改时百度盘中大量的文件遭删除清理的现象依然让用户怨声载道。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;怨声载道的用户背后是用户对免费资源无穷尽的追求。在这样的思路下，任何一个满足基本使用条件的文件分享系统——网盘、论坛、网站、种子与磁力链，都会成为一时的爆款，例如新浪爱问和新浪微盘，也比如bilibili试图正版化后和视频站疯抢资源以后出现的dilidili等山寨网站，甚至死而未僵的内容分享论坛，归根结底，只是这样一个问题：获取免费资源操作上的便利性——直接播放最方便，也最容易被整治；网盘分享次之，直接搜索并下载对用户来说也不会是负担；论坛或种子就更复杂一些，搜索与回复甚至积分等都是门槛。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在这样的环境下，新浪微盘被关闭了，还会有新的xx盘或者旧的百度盘继续顶上的。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;关闭微盘，顺手立了个牌坊的新浪&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-normal&quot; label=&quot;正文&quot;&gt;最后，我们来看一下新浪微盘在微博上的通告，通告中顺手@了一众提供各类资源的微博大号，用来稍微弥补一下被关闭的微盘中再也找不到的好用的”资料“们。现在，我们只能好心地希望这些大号提供的都是正版资料了，但到底是不是，我不说。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;', '33', '1461738661', '1461738661', '1', '1', '0', '0', '0', '0', '0');
+INSERT INTO `sys_article` VALUES ('16', '新浪微盘关闭在即，网盘到底犯了什么错？', '测试，百度', 'rving房车网', '虎嗅做了简单的搜索测试，想试试看微盘里究竟有什么东西值得被整改，但无奈没有交保护费的虎嗅已经完全无法使用搜索功能了。', '2016-05-13/573548f978360.png', '&lt;p&gt;虎嗅做了简单的搜索测试，想试试看微盘里究竟有什么东西值得被整改，但无奈没有交保护费的虎嗅已经完全无法使用搜索功能了。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_infkgcto&quot; src=&quot;http://images.huxiu.com/article/content/201604/25/1332032327.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;新浪微盘里都有什么？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;关闭的理由很是清晰，因为要配合监管部门的整改，那究竟是什么需要被整改？&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;这要从新浪爱问说起。曾经，丰富的（盗版）电子书资源就让新浪爱问共享资料产生了一定的用户粘性，但新浪爱问的资源近年来已经被经过多轮整治后几乎完全找不到“资料”后，新浪爱问也失去了原有的用户地位，此时新浪微盘改头换面承担了这部分“资料”共享的任务。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_infklwu5&quot; src=&quot;http://images.huxiu.com/article/content/201604/25/1336220295.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;原先新浪爱问中的资源，以及微博中用户的上传与分享，加上对搜索引擎的宽容，使得在新浪微盘中挖掘奇奇怪怪的内容轻而易举——百度搜索屏蔽了自家百度云，反而能从微盘中搜出文件来，如果配合什么神秘代码与车牌号，新浪微盘这简直是个大“车库”，什么文件电子书电影小电影，不要太简单。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;甚至在新浪自家关了搜索以后，用百度神秘代码“&lt;strong&gt;关键词 + site:vdisk.weibo.com&lt;/strong&gt;&amp;quot;依然可以搜出新浪微盘里被分享过的内容&lt;span label=&quot;备注&quot; class=&quot;text-remarks&quot;&gt;#不要说是我告诉你的#&lt;/span&gt;。现在，好奇的围观群众你们可以去挖一下新浪微盘里都藏了些什么宝藏了。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;img-center-box&quot; style=&quot;display:block;&quot;&gt;&lt;img style=&quot;max-width:100%;height:auto;&quot; id=&quot;loading_infky8xi&quot; src=&quot;http://images.huxiu.com/article/content/201604/25/1345570076.jpg?imageMogr2/strip/interlace/1/quality/85/format/jpg&quot; title=&quot;&quot;/&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;如果新浪爱问即面临版权和限制内容等影响，外加上述所说一不小心就会成为神秘资源聚集地，那微盘遭到整改也是情理之中。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;微盘既不是第一个被关闭的云存储，也不会是最后一个&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;网盘，最早出现于邮箱服务中的个人存储空间，用于临时放置文件或共享等。由于文件分享和随着移动互联网、多设备文件共享等用户刚需，独立的大容量网盘便成了必然。&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;自2014年整治互联网环境以来，网络存储就是监管的重点照顾对象之一，受限于用户上传内容的不可控性，对网盘内容的审查与监管成了技术上的老大难问题，早期的网盘，比如115或酷盘等，在多次整改限制后，如115几乎完全禁止了用户间分享文件后，现在几乎已经成了空壳，成为了真正只能供付费用户存放文件的网络硬盘。得益于较强技术实力下对违禁内容的识别，目前仅有百度盘情况略好一些，但当年整改时百度盘中大量的文件遭删除清理的现象依然让用户怨声载道。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;怨声载道的用户背后是用户对免费资源无穷尽的追求。在这样的思路下，任何一个满足基本使用条件的文件分享系统——网盘、论坛、网站、种子与磁力链，都会成为一时的爆款，例如新浪爱问和新浪微盘，也比如bilibili试图正版化后和视频站疯抢资源以后出现的dilidili等山寨网站，甚至死而未僵的内容分享论坛，归根结底，只是这样一个问题：获取免费资源操作上的便利性——直接播放最方便，也最容易被整治；网盘分享次之，直接搜索并下载对用户来说也不会是负担；论坛或种子就更复杂一些，搜索与回复甚至积分等都是门槛。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;在这样的环境下，新浪微盘被关闭了，还会有新的xx盘或者旧的百度盘继续顶上的。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;关闭微盘，顺手立了个牌坊的新浪&lt;/p&gt;&lt;p class=&quot;text-big-title&quot; label=&quot;大标题&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p class=&quot;text-normal&quot; label=&quot;正文&quot;&gt;最后，我们来看一下新浪微盘在微博上的通告，通告中顺手@了一众提供各类资源的微博大号，用来稍微弥补一下被关闭的微盘中再也找不到的好用的”资料“们。现在，我们只能好心地希望这些大号提供的都是正版资料了，但到底是不是，我不说。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;', '33', '1461738661', '1461738661', '1', '1', '0', '0', '1', '0', '1');
 
 -- ----------------------------
 -- Table structure for `sys_attr`
@@ -63,7 +63,7 @@ CREATE TABLE `sys_attr` (
   `name` varchar(50) DEFAULT NULL,
   `order` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_attr
@@ -71,6 +71,8 @@ CREATE TABLE `sys_attr` (
 INSERT INTO `sys_attr` VALUES ('5', '36', 'checkbox', '系统参数', '50');
 INSERT INTO `sys_attr` VALUES ('6', '33', 'checkbox', '车子演示', '50');
 INSERT INTO `sys_attr` VALUES ('7', '38', 'radio', '汽车驱动', '50');
+INSERT INTO `sys_attr` VALUES ('18', '36', 'linkage', '测试联动', '50');
+INSERT INTO `sys_attr` VALUES ('20', '37', 'linkage', '11111', '50');
 
 -- ----------------------------
 -- Table structure for `sys_attr_option`
@@ -81,7 +83,7 @@ CREATE TABLE `sys_attr_option` (
   `attid` int(11) DEFAULT NULL,
   `value` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of sys_attr_option
@@ -91,7 +93,7 @@ INSERT INTO `sys_attr_option` VALUES ('5', '6', '黑色');
 INSERT INTO `sys_attr_option` VALUES ('6', '6', '白色');
 INSERT INTO `sys_attr_option` VALUES ('7', '7', '四驱');
 INSERT INTO `sys_attr_option` VALUES ('8', '7', '两驱');
-INSERT INTO `sys_attr_option` VALUES ('21', '5', '9999');
+INSERT INTO `sys_attr_option` VALUES ('27', '20', '54');
 
 -- ----------------------------
 -- Table structure for `sys_auth_group`
@@ -109,7 +111,7 @@ CREATE TABLE `sys_auth_group` (
 -- ----------------------------
 -- Records of sys_auth_group
 -- ----------------------------
-INSERT INTO `sys_auth_group` VALUES ('41', '编辑组', '1', '1,2,3,53,58,59,60,54,61,62,63,64,55,65,66,56', '1461319543');
+INSERT INTO `sys_auth_group` VALUES ('41', '编辑组', '1', '1,2,68', '1461319543');
 INSERT INTO `sys_auth_group` VALUES ('1', '超级管理员', '1', '1,2,3,53,54,57,55,56', '1461318997');
 
 -- ----------------------------
@@ -151,9 +153,9 @@ CREATE TABLE `sys_auth_rule` (
 -- Records of sys_auth_rule
 -- ----------------------------
 INSERT INTO `sys_auth_rule` VALUES ('1', '系统主页', 'Index/mainInfo', '0', '1', '1461304352', 'fa fa-home', '1', null);
-INSERT INTO `sys_auth_rule` VALUES ('2', '相关设置', '', '0', '4', '1461304352', 'fa fa-cogs', '1', null);
+INSERT INTO `sys_auth_rule` VALUES ('2', '相关设置', 'Index/aboutSeting', '0', '4', '1461304352', 'fa fa-cogs', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('53', '管理员列表', 'Auth/adminList', '3', '50', '1461304669', '', '1', null);
-INSERT INTO `sys_auth_rule` VALUES ('3', '管理员设置', '', '0', '3', '1461304352', 'fa fa-user', '1', null);
+INSERT INTO `sys_auth_rule` VALUES ('3', '管理员设置', 'Auth/adminSeting', '0', '3', '1461304352', 'fa fa-user', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('54', '用户组', 'Auth/groupList', '3', '50', '1461304729', '', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('55', '权限菜单', 'Auth/Index', '3', '50', '1461304778', '', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('56', '清除缓存', 'Index/cache_clean', '0', '5', '1461304841', 'fa fa-trash-o', '1', null);
@@ -164,11 +166,9 @@ INSERT INTO `sys_auth_rule` VALUES ('61', '添加用户组', 'Auth/addGroup', '5
 INSERT INTO `sys_auth_rule` VALUES ('62', '编辑用户组', 'Auth/editGroup', '54', '50', '1461328386', '', '0', null);
 INSERT INTO `sys_auth_rule` VALUES ('63', '删除用户组', 'Auth/delGroup', '54', '50', '1461328412', '', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('64', 'ajax分组列表', 'Auth/getGroupList', '54', '50', '1461328477', '', '1', null);
-INSERT INTO `sys_auth_rule` VALUES ('65', '添加菜单', 'Auth/addMenu', '55', '50', '1461328543', '', '0', null);
-INSERT INTO `sys_auth_rule` VALUES ('66', '删除菜单', 'Auth/delMenu', '55', '50', '1461328598', '', '0', null);
 INSERT INTO `sys_auth_rule` VALUES ('68', '站点设置', 'Index/siteSetting', '2', '50', '1461462374', '', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('69', '修改密码', 'Index/changePassword', '2', '50', '1461480464', '', '1', null);
-INSERT INTO `sys_auth_rule` VALUES ('70', '内容管理', '', '0', '2', '1461483373', 'fa fa-file-text-o', '1', null);
+INSERT INTO `sys_auth_rule` VALUES ('70', '内容管理', 'Content/contentManage', '0', '2', '1461483373', 'fa fa-file-text-o', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('71', '菜单排序', 'Auth/order', '55', '50', '1461484870', '', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('72', '分类管理', 'Content/Category', '70', '50', '1461489204', '', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('73', '分类列表', 'Content/Category', '72', '50', '1461490620', '', '0', null);
@@ -182,12 +182,6 @@ INSERT INTO `sys_auth_rule` VALUES ('80', '添加文章', 'Article/addArticle', 
 INSERT INTO `sys_auth_rule` VALUES ('81', '编辑文章', 'Article/editArticle', '79', '50', '1461642143', '', '0', null);
 INSERT INTO `sys_auth_rule` VALUES ('82', '文章置顶', 'Article/istop', '79', '50', '1461642174', '', '0', null);
 INSERT INTO `sys_auth_rule` VALUES ('83', '文章显示', 'Article/isshow', '79', '50', '1461642200', '', '0', null);
-INSERT INTO `sys_auth_rule` VALUES ('84', '前台菜单', 'Content/MenuManage', '70', '50', '1461651299', '', '1', null);
-INSERT INTO `sys_auth_rule` VALUES ('85', '添加菜单', 'Content/addMenu', '84', '50', '1461667066', '', '0', null);
-INSERT INTO `sys_auth_rule` VALUES ('86', '编辑菜单', 'Content/editMenu', '84', '50', '1461667099', '', '0', null);
-INSERT INTO `sys_auth_rule` VALUES ('87', '删除菜单', 'Content/delMenu', '84', '50', '1461667138', '', '0', null);
-INSERT INTO `sys_auth_rule` VALUES ('88', '显示菜单', 'Content/isShowMenu', '84', '50', '1461667164', '', '0', null);
-INSERT INTO `sys_auth_rule` VALUES ('89', '菜单排序', 'Content/order', '84', '50', '1461667208', '', '0', null);
 INSERT INTO `sys_auth_rule` VALUES ('90', '删除文章', 'Article/delArticle', '79', '50', '1461722886', '', '1', null);
 INSERT INTO `sys_auth_rule` VALUES ('91', '头像上传', 'Index/shearPhoto', '1', '50', '1462760398', '', '0', null);
 INSERT INTO `sys_auth_rule` VALUES ('92', '附加属性', 'Content/attachedProperties', '70', '50', '1462766700', '', '1', null);
@@ -208,19 +202,20 @@ CREATE TABLE `sys_category` (
   `description` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `keywords` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `categorytype` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `category_en` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of sys_category
 -- ----------------------------
-INSERT INTO `sys_category` VALUES ('33', '资讯', '0', '1', '文章', '文章', 'article');
-INSERT INTO `sys_category` VALUES ('36', '图片', '0', '1', '图片', '图片', 'article');
-INSERT INTO `sys_category` VALUES ('37', '车系', '0', '1', '车系', '车系', 'article');
-INSERT INTO `sys_category` VALUES ('38', '报价', '0', '1', '报价', '报价', 'article');
-INSERT INTO `sys_category` VALUES ('39', '导购', '0', '1', '导购', '导购', 'article');
-INSERT INTO `sys_category` VALUES ('40', '装备', '0', '1', '装备', '装备', 'article');
-INSERT INTO `sys_category` VALUES ('41', '营地', '0', '1', '营地', '营地', 'article');
+INSERT INTO `sys_category` VALUES ('33', '资讯', '0', '1', '文章', '文章', 'article', 'info');
+INSERT INTO `sys_category` VALUES ('36', '图片', '0', '1', '图片', '图片', 'article', 'images');
+INSERT INTO `sys_category` VALUES ('37', '车系', '0', '1', '车系', '车系', 'article', 'series');
+INSERT INTO `sys_category` VALUES ('38', '报价', '0', '1', '报价', '报价', 'article', 'prices');
+INSERT INTO `sys_category` VALUES ('39', '导购', '0', '1', '导购', '导购', 'article', 'guide');
+INSERT INTO `sys_category` VALUES ('40', '装备', '0', '1', '装备', '装备', 'article', 'gears');
+INSERT INTO `sys_category` VALUES ('41', '营地', '0', '1', '营地', '营地', 'article', 'campgrounds');
 
 -- ----------------------------
 -- Table structure for `sys_linkage`
@@ -240,33 +235,6 @@ INSERT INTO `sys_linkage` VALUES ('54', '99999', '0');
 INSERT INTO `sys_linkage` VALUES ('55', '8888', '54');
 INSERT INTO `sys_linkage` VALUES ('56', '7777', '55');
 INSERT INTO `sys_linkage` VALUES ('57', '77777999', '56');
-
--- ----------------------------
--- Table structure for `sys_menu`
--- ----------------------------
-DROP TABLE IF EXISTS `sys_menu`;
-CREATE TABLE `sys_menu` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) DEFAULT NULL,
-  `url` varchar(100) DEFAULT NULL,
-  `pid` int(11) DEFAULT NULL,
-  `ishref` int(11) DEFAULT '0' COMMENT '是否是第三方链接',
-  `isshow` int(11) DEFAULT NULL,
-  `sort` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of sys_menu
--- ----------------------------
-INSERT INTO `sys_menu` VALUES ('11', '资讯', 'info', '0', '0', '1', '1');
-INSERT INTO `sys_menu` VALUES ('12', '图片', 'images', '0', '0', '1', '2');
-INSERT INTO `sys_menu` VALUES ('13', '车系', 'series', '0', '0', '1', '3');
-INSERT INTO `sys_menu` VALUES ('14', '报价', 'prices', '0', '0', '1', '4');
-INSERT INTO `sys_menu` VALUES ('15', '导购', 'guide', '0', '0', '1', '5');
-INSERT INTO `sys_menu` VALUES ('16', '装备', 'gears', '0', '0', '1', '6');
-INSERT INTO `sys_menu` VALUES ('17', '营地', 'campgrounds', '0', '0', '1', '7');
-INSERT INTO `sys_menu` VALUES ('18', '论坛', 'http://bbs.rving.com.cn', '0', '1', '1', '8');
 
 -- ----------------------------
 -- Table structure for `sys_site_setting`
@@ -309,5 +277,5 @@ CREATE TABLE `sys_user` (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES ('1', 'admin', '21232f297a57a5a743894a0e4a801fc3', '410202049@qq.com', '', '1', '1462762627', '127.0.0.1', 'avatar5730719d8adc8_108_name1.jpg', '1');
-INSERT INTO `sys_user` VALUES ('4', 'kerry', '21232f297a57a5a743894a0e4a801fc3', '', '', '1', '1462263370', '127.0.0.1', null, '1');
+INSERT INTO `sys_user` VALUES ('1', 'admin', '21232f297a57a5a743894a0e4a801fc3', '410202049@qq.com', '', '1', '1463366477', '127.0.0.1', 'avatar5730719d8adc8_108_name1.jpg', '1');
+INSERT INTO `sys_user` VALUES ('4', 'aaaaaa', '21232f297a57a5a743894a0e4a801fc3', '', '', '1', '1463109687', '127.0.0.1', null, '1');
