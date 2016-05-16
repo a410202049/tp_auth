@@ -160,5 +160,71 @@ function getUser($uid,$getPic= 0){
 	return $user;
 }
 
+function getCategory($cid){
+	$category = M('category','sys_');
+	$category = $category->where(array('id'=>$cid))->find();
+	return $category['category_en'];
+}
+
+    /**
+     * 将闭包函数转为字符串
+     * @param Closure $c
+     * @param boolen $escape
+     * @return string
+     */
+    function closure_dump(Closure $c, $escape = true) {
+        $str = 'function (';
+        $r = new ReflectionFunction($c);
+        $params = array();
+        foreach($r->getParameters() as $p) {
+            $s = '';
+            if($p->isArray()) {
+                $s .= 'array ';
+            } else if($p->getClass()) {
+                $s .= $p->getClass()->name . ' ';
+            }
+            if($p->isPassedByReference()){
+                $s .= '&';
+            }
+            $s .= '$' . $p->name;
+            if($p->isOptional()) {
+                $s .= ' = ' . var_export($p->getDefaultValue(), TRUE);
+            }
+            $params []= $s;
+        }
+        $str .= implode(', ', $params);
+        $str .= '){' . PHP_EOL;
+        $lines = file($r->getFileName());
+        for($l = $r->getStartLine(); $l < $r->getEndLine(); $l++) {
+            $str .= $lines[$l];
+        }
+        if($escape){
+            $str = preg_replace('/[\r\n\t]/', '', $str);
+        }
+        $str = preg_replace('/}[,;]$/', '}', $str);
+        return $str;
+    }
+    /**
+     * 将变量转为输出到字符串
+     * @param mixed $expression
+     * @param boolen $escape
+     * @return string 
+     */
+    function custom_var_export($expression, $escape = true){
+        $str = '';
+        if(is_array($expression)){
+            $str .= 'array(';
+            foreach ($expression as $key => $val){
+                $str .= "'".$key."' => ".custom_var_export($val).',';
+            }
+            $str .= ')';
+        }else if($expression instanceof \Closure){
+            $str .= closure_dump($expression);
+        }else{
+            $str .= var_export($expression, true);
+        }
+        return $str;
+    }
+
 include dirname(__FILE__).DIRECTORY_SEPARATOR.'pinyin.php';
 ?>

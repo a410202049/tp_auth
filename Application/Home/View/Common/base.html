@@ -38,13 +38,14 @@
 <header class="header-top">
   <div class="container">
     <div class="header-logo">
-        <a class="logo" href="index.html"><img title="汽车之家" alt="汽车之家" src="__PUBLIC__/home/images/logo.png"></a>
+        <a class="logo" href="/"><img title="汽车之家" alt="汽车之家" src="__PUBLIC__/home/images/logo.png"></a>
         <div class="header-right-div">
             <!-- pc端头部 -->
             <ul class="navbar-nav">
-                <volist name="menus" id="menu">
-                  <li><a href="{$menu.url}">{$menu.name}</a></li>
+                <volist name="category" id="menu">
+                  <li><a href="/{$menu.category_en}">{$menu.name}</a></li>
                 </volist>
+                <li><a href="http://bbs.rving.cn">论坛</a></li>
             </ul>
 
           <form method="GET" action="http://app.iheima.com/" id="head_search" class="search">

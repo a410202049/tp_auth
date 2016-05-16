@@ -333,13 +333,13 @@ body{
     line-height: 24px;
 }
 .mob-author .author-name {
-    margin-left: 36px;
+    margin-left: 0px;
 }
 .mob-author .author-name.no-face {
     margin-left: 0;
 }
 .mod-b-push .mob-author .author-name {
-    margin-left: 36px;
+    margin-left: 0px;
 }
 .mod-b-push .mob-author .author-name.no-face {
     margin-left: 0;

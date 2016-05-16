@@ -31,7 +31,9 @@ return array(
 
     'URL_ROUTER_ON' => true,
     'URL_ROUTE_RULES' => array(
-        'page/[:page\d]$'=>'Home/Index/index'
+        'page/[:page\d]$'=>'Home/Index/index',
+        'info/:id'          => 'Home/Index/articleDetail',
+        'info' => array('Home/Index/articleList', 'cid=1'),
     )
 
 );

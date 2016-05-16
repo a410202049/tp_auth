@@ -1,0 +1,77 @@
+<extend name="common/base"/>
+<block name="content">
+  <div class="container">
+    <div class="wrap-left pull-left">
+      <span class="most_update"><span class="crumbs"><span>首页</span>>><a href="#">资讯</a></span></span>
+      <div class="artilce-list">
+
+
+
+
+
+
+
+      </div>
+
+      <div data-cur-page="1" class="get-mod-more js-get-mod-more-list transition">点击加载更多</div>
+
+    </div>
+    <div class="wrap-right pull-right">
+      <div class="box-topic">
+          <div class="topic-title-bbs">
+              <h4>热门推荐</h4>
+          </div>
+          <div class="topic-content">
+            <div class="slide_container">
+              <ul class="rslides" id="slider">
+                <volist name="hotsPic" id="pic">
+                  <li>
+                    <a href="#"><img src="/Uploads/{$pic.cover}"></a>
+                  </li>
+                </volist>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+      <div class="slider-right-list">
+        <ul>
+          <volist name="hotsText" id="text" key='k'>
+              <li><a target="_blank" title="{$text.title}" href="#">{$k}.{$text.title|msubstr=0,17}</a></li>
+          </volist>
+        </ul>
+      </div>
+      
+      <div class="box-moder">
+          <div class="box-moder-title">
+            <span class="span-mark"></span>
+            <div class="moder-title">特别推荐</div>
+            <span class="moder-more">
+              <a target="_blank" class="transition" href="/chuangye">全部</a>
+            </span>
+          </div>
+          <div class="box-moder-content">
+            <ul>
+                <volist name="isspecial" id="special">
+                  <li>
+                      <div class="article-pic">
+                          <a><img src="/Uploads/{$special.cover}"></a>
+                      </div>
+                      <div class="article-content">
+                          <div class="article-title-special">
+                              <a target="_blank" class="transition" href="#">{$special.title}</a>
+                          </div>
+                          <p>{$special.username}</p>
+                      </div>
+                  </li>
+                </volist>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="ad-box bottom-ad">
+        <img src="__PUBLIC__/home/images/ad2.jpg">
+      </div>
+    </div>
+</div>
+</block>
