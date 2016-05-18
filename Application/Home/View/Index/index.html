@@ -5,11 +5,13 @@
       <div class="rotaion">
         <ul class="rotaion_list">
           <volist name="sides" id="side">
-            <li><a href="/{:getCategory($side['categoryid'])}/{$side.id}"><img src="/Uploads/{$side.cover}" alt="{$side.title}"></a></li>
+            <li><a href="/{:getCategory($side['categoryid'],'category_en')}/{$side.id}"><img src="/Uploads/{$side.cover}" alt="{$side.title}"></a></li>
           </volist>
         </ul>
       </div>
       <span class="most_update"><h4>最近更新</h4></span>
+      
+
       <div class="artilce-list">
 
         <volist name="articles" id="article">
@@ -20,14 +22,7 @@
                   <div class="mob-author">
                       <a target="_blank" href="javascript:void(0);"><span class="author-name ">{$article.username}</span></a>
                       <span class="time">{$article.updatetime}</span>
-<!--                       <i class="icon icon-cmt"></i><em>1</em>
-                      <i class="icon icon-fvr"></i><em>0</em> -->
-                      <!-- <i class="icon icon-line"></i> -->
-                      <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
-                      <div class="qr-moments-box">
-                          <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
-                      </div>
-                      <i aid="141907" data-f="pc-qzone-index" data-location="index" class="icon icon-Qzone js-qzone js-share-article"></i>
+                      <div class="bdsharebuttonbox"><a title="分享到QQ空间" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_weixin" data-cmd="weixin"></a></div>
                   </div>
                   <div class="mob-sub">{$article.description}</div>
               </div>
@@ -43,14 +38,7 @@
                     <div class="mob-author">
                         <a target="_blank" href="javascript:void(0);"><span class="author-name ">{$article.username}</span></a>
                         <span class="time">{$article.updatetime}</span>
-<!--                         <i class="icon icon-cmt"></i><em>1</em>
-                        <i class="icon icon-fvr"></i><em>0</em> -->
-                        <!-- <i class="icon icon-line"></i> -->
-                        <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
-                        <div class="qr-moments-box">
-                        <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
-                        </div>
-                        <i aid="141907" data-f="pc-qzone-index" data-location="index" class="icon icon-Qzone js-qzone js-share-article"></i>
+                        <div class="bdsharebuttonbox"><a title="分享到QQ空间" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_weixin" data-cmd="weixin"></a></div>
                     </div>
                     <div class="mob-sub">{$article.description|msubstr=0,55}</div>
                 </div>
@@ -66,14 +54,7 @@
                     <div class="mob-author">
                           <a target="_blank" href="javascript:void(0);"><span class="author-name ">{$article.username}</span></a>
                         <span class="time">{$article.updatetime}</span>
-<!--                         <i class="icon icon-cmt"></i><em>1</em>
-                        <i class="icon icon-fvr"></i><em>0</em> -->
-                        <!-- <i class="icon icon-line"></i> -->
-                        <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
-                        <div class="qr-moments-box">
-                            <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
-                        </div>
-                        <i aid="141907" data-f="pc-qzone-index" data-location="index" class="icon icon-Qzone js-qzone js-share-article"></i>
+                        <div class="bdsharebuttonbox"><a title="分享到QQ空间" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="bds_weixin" data-cmd="weixin"></a></div>
                     </div>
                     <div class="mob-sub">{$article.description|msubstr=0,55}</div>
                 </div>
@@ -199,5 +180,6 @@
       </div>
     </div>
 </div>
-
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["qzone","tsina","weixin","tqq","kaixin001","tieba","bdhome","thx","meilishuo","diandian","duitang","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
 </block>

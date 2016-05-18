@@ -313,7 +313,7 @@ body{
 }
 
 .mob-author {
-    margin: 15px 0;
+    margin: 15px 0 0;
 }
 
 .mob-author .author-face {
@@ -347,6 +347,8 @@ body{
 .mob-author .time {
     margin-left: 10px;
     font-size: 14px;
+    float: left;
+    margin-right: 25px;
 }
 .mob-author em {
     margin-left: 5px;
@@ -876,6 +878,8 @@ body{
 
 .mob-author a{
 	font-size: 12px;
+    /*display: inline;*/
+    float: left;
 }
 
 .mob-author .icon-Qzone, .mob-author .icon-cmt, .mob-author .icon-moments, .mob-author .icon-share, .mob-author .icon-weibo {
@@ -921,7 +925,7 @@ body{
 }
 
 .mod-b-push .mob-author {
-    margin: 25px 0;
+    margin: 25px 0 0;
 }
 
 .mod-thumb .transition:hover img{
