@@ -2,7 +2,7 @@
 <block name="content">
   <div class="container">
     <div class="wrap-left pull-left">
-      <span class="most_update"><span class="crumbs"><span>首页</span>>><a href="#">资讯</a></span></span>
+      <span class="most_update"><span class="crumbs"><span>首页</span>>><a href="javascript:void(0);">{:getCategory($cid,'name')}</a></span></span>
       <div class="artilce-list">
 
 
@@ -10,13 +10,13 @@
           <if condition="$article.cover eq ''">
             <div class="artilce-list-div">
               <div class="mob-ctt no-cover">
-                  <h3><a target="_blank" class="transition" href="/{:getCategory($article['categoryid'])}/{$article.id}">{$article.title}</a></h3>
+                  <h3><a target="_blank" class="transition" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}">{$article.title}</a></h3>
                   <div class="mob-author">
                       <a target="_blank" href="javascript:void(0);"><span class="author-name ">{$article.username}</span></a>
                       <span class="time">{$article.updatetime}</span>
-                      <i class="icon icon-cmt"></i><em>1</em>
-                      <i class="icon icon-fvr"></i><em>0</em>
-                      <i class="icon icon-line"></i>
+<!--                       <i class="icon icon-cmt"></i><em>1</em>
+                      <i class="icon icon-fvr"></i><em>0</em> -->
+                      <!-- <i class="icon icon-line"></i> -->
                       <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
                       <div class="qr-moments-box">
                           <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
@@ -29,17 +29,17 @@
           <elseif condition="$article.isstressed eq '1'" />
             <div class="artilce-list-div mod-b-push">
                 <div class="mod-thumb">
-                    <a target="_blank" href="/{:getCategory($article['categoryid'])}/{$article.id}" class="transition">
+                    <a target="_blank" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="transition">
                         <img alt="#" src="/Uploads/{$article.cover}">
                     </a>
                 </div><div class="mob-ctt">
-                    <h3><a target="_blank" class="transition" href="/{:getCategory($article['categoryid'])}/{$article.id}">{$article.title}</a></h3>
+                    <h3><a target="_blank" class="transition" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}">{$article.title}</a></h3>
                     <div class="mob-author">
                         <a target="_blank" href="javascript:void(0);"><span class="author-name ">{$article.username}</span></a>
                         <span class="time">{$article.updatetime}</span>
-                        <i class="icon icon-cmt"></i><em>1</em>
-                        <i class="icon icon-fvr"></i><em>0</em>
-                        <i class="icon icon-line"></i>
+<!--                         <i class="icon icon-cmt"></i><em>1</em>
+                        <i class="icon icon-fvr"></i><em>0</em> -->
+                        <!-- <i class="icon icon-line"></i> -->
                         <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
                         <div class="qr-moments-box">
                         <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>
@@ -52,17 +52,17 @@
           <else />
             <div class="artilce-list-div">
                 <div class="mod-thumb">
-                    <a target="_blank" href="/{:getCategory($article['categoryid'])}/{$article.id}" class="transition">
+                    <a target="_blank" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}" class="transition">
                         <img alt="#" src="/Uploads/{$article.cover}">
                     </a>
                 </div><div class="mob-ctt">
-                    <h3><a target="_blank" class="transition" href="/{:getCategory($article['categoryid'])}/{$article.id}">{$article.title}</a></h3>
+                    <h3><a target="_blank" class="transition" href="/{:getCategory($article['categoryid'],'category_en')}/{$article.id}">{$article.title}</a></h3>
                     <div class="mob-author">
                           <a target="_blank" href="javascript:void(0);"><span class="author-name ">{$article.username}</span></a>
                         <span class="time">{$article.updatetime}</span>
-                        <i class="icon icon-cmt"></i><em>1</em>
-                        <i class="icon icon-fvr"></i><em>0</em>
-                        <i class="icon icon-line"></i>
+<!--                         <i class="icon icon-cmt"></i><em>1</em>
+                        <i class="icon icon-fvr"></i><em>0</em> -->
+                        <!-- <i class="icon icon-line"></i> -->
                         <i aid="141907" data-f="pc-weibo-index" data-location="index" class="icon icon-weibo js-weibo js-share-article"></i>
                         <div class="qr-moments-box">
                             <i data-aid="141907" data-f="pc-friends-index" data-location="index" class="icon icon-moments js-icon-moments"></i>

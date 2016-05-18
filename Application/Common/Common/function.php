@@ -160,10 +160,10 @@ function getUser($uid,$getPic= 0){
 	return $user;
 }
 
-function getCategory($cid){
+function getCategory($cid,$name){
 	$category = M('category','sys_');
 	$category = $category->where(array('id'=>$cid))->find();
-	return $category['category_en'];
+	return $category[$name];
 }
 
     /**

@@ -32,8 +32,34 @@ return array(
     'URL_ROUTER_ON' => true,
     'URL_ROUTE_RULES' => array(
         'page/[:page\d]$'=>'Home/Index/index',
-        'info/:id'          => 'Home/Index/articleDetail',
-        'info' => array('Home/Index/articleList', 'cid=1'),
+        //资讯页
+        'info/:id$'          => 'Home/Index/articleDetail',
+        'info' => array('Home/Index/articleList', 'cid=33'),
+        'info/list/:p' => array('Home/Index/articleList/:1', 'cid=33'),
+        //图片页
+        'images/:id$'          => 'Home/Index/articleDetail',
+        'images' => array('Home/Index/articleList', 'cid=36'),
+        'images/list/:p' => array('Home/Index/articleList/:1', 'cid=36'),
+        //车系
+        'series/:id$'          => 'Home/Index/articleDetail',
+        'series' => array('Home/Index/articleList', 'cid=37'),
+        'series/list/:p' => array('Home/Index/articleList/:1', 'cid=37'),
+        //报价
+        'prices/:id$'          => 'Home/Index/articleDetail',
+        'prices' => array('Home/Index/articleList', 'cid=38'),
+        'prices/list/:p' => array('Home/Index/articleList/:1', 'cid=38'),
+        //导购
+        'guide/:id$'          => 'Home/Index/articleDetail',
+        'guide' => array('Home/Index/articleList', 'cid=39'),
+        'guide/list/:p' => array('Home/Index/articleList/:1', 'cid=39'),
+        //装备
+        'gears/:id$'          => 'Home/Index/articleDetail',
+        'gears' => array('Home/Index/articleList', 'cid=40'),
+        'gears/list/:p' => array('Home/Index/articleList/:1', 'cid=40'),
+        //营地
+        'campgrounds/:id$'          => 'Home/Index/articleDetail',
+        'campgrounds' => array('Home/Index/articleList', 'cid=41'),
+        'campgrounds/list/:p' => array('Home/Index/articleList/:1', 'cid=41'),
     )
 
 );

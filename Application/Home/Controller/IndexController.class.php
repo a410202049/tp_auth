@@ -5,7 +5,7 @@ class IndexController extends BaseController {
     public function index(){
     	$article = M('article','sys_');
     	$count = $article->where(array('isshow'=>'1'))->count();// 查询满足要求的总记录数
-        $Page       = new \Common\Tools\Page($count,3);
+        $Page       = new \Common\Tools\Page($count,15);
         $Page->route = 'page';
         $Page->setConfig('prev', '上一页');
         $Page->setConfig('next', '下一页');
@@ -73,18 +73,21 @@ class IndexController extends BaseController {
 
     public function articleList(){
         $arr = I();
-
+        $cid = $arr['cid'];
     	$article = M('article','sys_');
-    	$count = $article->where(array('isshow'=>'1'))->count();// 查询满足要求的总记录数
-        $Page       = new \Common\Tools\Page($count,3);
-        $Page->route = 'page';
+        $category = M('category','sys_');
+        $cate = $category->where(array('id'=>$cid))->find();
+        $category_en = $cate['category_en'];
+    	$count = $article->where(array('isshow'=>'1','categoryid'=>$cid))->count();// 查询满足要求的总记录数
+        $Page       = new \Common\Tools\Page($count,15);
+        $Page->route = $category_en."/page";
         $Page->setConfig('prev', '上一页');
         $Page->setConfig('next', '下一页');
         $Page->setConfig('first', '首页');
         $Page->setConfig('last', '末页');
         $Page->setConfig('theme', '%FIRST%%UP_PAGE%%LINK_PAGE%%DOWN_PAGE%%END%');
         $show = $Page->show();// 分页显示输出
-        $articles = $article->where(array('isshow'=>'1'))->limit($Page->firstRow.','.$Page->listRows)->order('createtime desc')->select();
+        $articles = $article->where(array('isshow'=>'1','categoryid'=>$cid))->limit($Page->firstRow.','.$Page->listRows)->order('createtime desc')->select();
     	foreach ($articles as $key => $value) {
     		$user = getUser($value['uid']);
     		$articles[$key]['content'] = formatStr($value['content']);
@@ -103,6 +106,7 @@ class IndexController extends BaseController {
     		$isspecial[$k]['avatar'] = $user['avatar'];
     	}
 
+        $this->assign('cid',$cid);
         $this->assign('page',$show);
     	$this->assign('isspecial',$isspecial);
     	$this->assign('hotsPic',$hotsPic);

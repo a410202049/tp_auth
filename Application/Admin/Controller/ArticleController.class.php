@@ -11,7 +11,7 @@ class ArticleController extends AdminController {
     public function index(){
     	$article = M('article','sys_');
     	$count      = $article->count();// 查询满足要求的总记录数
-        $Page       = new \Common\Tools\Page($count,2);
+        $Page       = new \Common\Tools\Page($count,15);
         $Page->setConfig('prev', '<span aria-hidden="true">«</span>');
         $Page->setConfig('next', '<span aria-hidden="true">»</span>');
         $Page->setConfig('first', '首页');
