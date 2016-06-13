@@ -5,7 +5,7 @@ class IndexController extends BaseController {
     public function index(){
     	$article = M('article','sys_');
     	$count = $article->where(array('isshow'=>'1'))->count();// 查询满足要求的总记录数
-        $Page       = new \Common\Tools\Page($count,15);
+        $Page       = new \Common\Tools\Page($count,1);
         $Page->route = 'page';
         $Page->setConfig('prev', '上一页');
         $Page->setConfig('next', '下一页');
